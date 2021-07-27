@@ -1,6 +1,6 @@
 select COUNTRY_NAME as 'País',
 case
-when REGION_ID = 3 then 'incluído'
+when REGION_ID = 1 then 'incluído'
 else 'não incluído'
 end as 'Status Inclusão'
 from hr.countries 
