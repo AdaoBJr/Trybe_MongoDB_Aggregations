@@ -1,0 +1,15 @@
+SELECT
+jobs.JOB_TITLE AS "Cargo",
+CASE
+	WHEN jobs.MAX_SALARY BETWEEN 5000 AND 1000
+		THEN "Baixo"
+	WHEN jobs.MAX_SALARY BETWEEN 10001 AND 20000
+		THEN "Médio"
+	WHEN jobs.MAX_SALARY BETWEEN 20001 AND 30000
+		THEN "Alto"
+	ELSE "Altíssimo"
+END AS "Nível"
+FROM hr.employees employees
+INNER JOIN hr.jobs jobs
+WHERE employees.JOB_ID = jobs.JOB_ID
+ORDER BY Cargo ASC;
