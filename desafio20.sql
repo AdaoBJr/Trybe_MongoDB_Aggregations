@@ -6,7 +6,7 @@ BEGIN
 
 SELECT
     CONCAT_WS(' ', e.FIRST_NAME, e.LAST_NAME) 'Nome completo',
-	  d.DEPARTMENT_NAME Departamento,
+	    d.DEPARTMENT_NAME Departamento,
     j.JOB_TITLE Cargo
 
 FROM
