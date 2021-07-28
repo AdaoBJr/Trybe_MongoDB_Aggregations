@@ -1,5 +1,5 @@
 SELECT 
-    jobs.JOB_TITLE AS 'Cargo',
+    j.JOB_TITLE AS 'Cargo',
     ROUND(AVG(e.SALARY), 2) AS 'Média salarial',
     CASE
         WHEN AVG(e.SALARY) BETWEEN 2000 AND 5800 THEN 'Júnior'
@@ -11,6 +11,6 @@ SELECT
 FROM
     employees e
         INNER JOIN
-    jobs ON e.JOB_ID = jobs.JOB_ID
-GROUP BY jobs.JOB_TITLE
+    jobs j ON e.JOB_ID = j.JOB_ID
+GROUP BY j.JOB_TITLE
 ORDER BY AVG(e.SALARY) ASC , Cargo ASC;
