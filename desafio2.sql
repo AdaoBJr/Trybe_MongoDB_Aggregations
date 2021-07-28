@@ -1,6 +1,5 @@
 SELECT 
     JOB_TITLE AS 'Cargo',
-    MAX_SALARY,
     CASE
         WHEN
             MAX_SALARY >= 5000
