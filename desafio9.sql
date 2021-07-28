@@ -5,4 +5,4 @@ FROM w3schools.employees e
 INNER JOIN w3schools.orders o
   ON e.EmployeeID = o.EmployeeID
 GROUP BY o.EmployeeID
-ORDER BY COUNT(*)
+ORDER BY COUNT(*);
