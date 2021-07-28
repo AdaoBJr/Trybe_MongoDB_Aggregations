@@ -10,6 +10,6 @@ SELECT
 FROM
     hr.jobs AS j
         INNER JOIN
-    employees AS e ON j.JOB_ID = e.JOB_ID
+    employees AS e where j.JOB_ID = e.JOB_ID
 GROUP BY cargo
 ORDER BY 'Média Salarial' , cargo;
