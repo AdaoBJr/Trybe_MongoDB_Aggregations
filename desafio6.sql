@@ -7,9 +7,9 @@ SELECT
   d.department_name AS 'Departamento'
 
 FROM
-    hr.employees AS e
-    INNER JOIN hr.jobs AS j ON e.job_id = j.job_id
-    INNER JOIN hr.departments AS d ON e.department_id = d.department_id
-    INNER JOIN hr.job_history AS jh ON e.employee_id = jh.employee_id
+    hr.job_history AS jh
+    INNER JOIN hr.jobs AS j ON jh.job_id = j.job_id
+    INNER JOIN hr.departments AS d ON jh.department_id = d.department_id
+    INNER JOIN hr.employees AS e ON jh.employee_id = e.employee_id
 
 ORDER BY 1 DESC, 2;
