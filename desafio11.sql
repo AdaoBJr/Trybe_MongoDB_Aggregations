@@ -7,7 +7,6 @@ SELECT
 FROM w3schools.customers c1
 LEFT JOIN w3schools.customers c2
   ON c1.Country = c2.Country
-GROUP BY 2,
-         1
+GROUP BY c1.Country, c1.ContactName
 HAVING COUNT(*) > 1
 ORDER BY c1.ContactName;
