@@ -1,6 +1,6 @@
 SELECT  CONCAT(FIRST_NAME, ' ',LAST_NAME) AS 'Nome completo', 
 cargo.JOB_TITLE AS Cargo,
-e.HIRE_DATE AS 'Data de início do cargo' ,
+h.START_DATE AS 'Data de início do cargo' ,
 d.DEPARTMENT_NAME AS Departamento
 
 FROM job_history AS h
@@ -13,4 +13,5 @@ ON cargo.JOB_ID = h.JOB_ID
 RIGHT JOIN departments AS d
 ON d.DEPARTMENT_ID = h.DEPARTMENT_ID
 WHERE CONCAT(FIRST_NAME, ' ',LAST_NAME) IS NOT NULL
-ORDER BY CONCAT(FIRST_NAME, ' ',LAST_NAME) DESC;
+ORDER BY CONCAT(FIRST_NAME, ' ',LAST_NAME) DESC,
+cargo.JOB_TITLE;
