@@ -4,5 +4,5 @@ CREATE TRIGGER trigger_order_insert
 BEFORE INSERT ON w3schools.orders
 FOR EACH ROW
 BEGIN
-SET NEW.OrderDate = YEAR(NOW());
+SET NEW.OrderDate = (NOW());
 END $$
