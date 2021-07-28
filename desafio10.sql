@@ -1,7 +1,11 @@
 SELECT
 p.ProductName AS Produto,
-o.Quantity AS Quantidade
+MIN(o.Quantity) AS 'Mínima',
+MAX(o.Quantity) AS 'Máxima',
+ROUND(AVG(o.Quantity), 2) AS 'Média'
   FROM products AS p
 INNER JOIN order_details AS o
 ON  o.ProductID = p.ProductID
-WHERE o.Quantity > 20;
+
+GROUP BY p.ProductID
+HAVING AVG(o.Quantity) > 20;
