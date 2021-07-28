@@ -5,10 +5,11 @@ SELECT
     d.DEPARTMENT_NAME AS 'Departamento'
 FROM
     hr.employees e
-        INNER JOIN
-    hr.jobs j ON e.JOB_ID = j.JOB_ID
-        INNER JOIN
-    hr.departments d ON e.DEPARTMENT_ID = d.DEPARTMENT_ID
-        INNER JOIN
+            INNER JOIN
     hr.job_history jh ON e.EMPLOYEE_ID = jh.EMPLOYEE_ID
-ORDER BY FIRST_NAME DESC , LAST_NAME DESC , JOB_TITLE;
+        INNER JOIN
+    hr.jobs j ON j.JOB_ID = jh.JOB_ID
+        INNER JOIN
+    hr.departments d ON jh.DEPARTMENT_ID = d.DEPARTMENT_ID
+
+ORDER BY `Nome completo` DESC, `Cargo`;

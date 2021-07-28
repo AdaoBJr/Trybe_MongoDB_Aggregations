@@ -8,4 +8,4 @@ FROM
     hr.job_history jh ON e.EMPLOYEE_ID = jh.EMPLOYEE_ID
 WHERE
     MONTH(START_DATE) BETWEEN 1 AND 3
-ORDER BY FIRST_NAME , LAST_NAME , MONTH(START_DATE);
+ORDER BY `Nome completo`, `Data de início`;
