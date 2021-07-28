@@ -17,4 +17,3 @@ RETURN n;
 END $$
 
 DELIMITER $$
-
