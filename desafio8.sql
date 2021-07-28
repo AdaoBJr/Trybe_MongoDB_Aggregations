@@ -5,7 +5,7 @@ SELECT
 FROM
     orders o
 INNER JOIN customers c
-INNER JOIN shippers AS s
+INNER JOIN shippers s
 ON c.CustomerID = o.CustomerID AND s.ShipperID = o.ShipperID
 WHERE s.ShipperName = 'Speedy Express' OR s.ShipperName = 'United Package'
 ORDER BY ContactName, ShipperName, OrderDate;
