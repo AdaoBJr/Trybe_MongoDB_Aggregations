@@ -7,7 +7,7 @@ SELECT
     WHEN ROUND(AVG(e.salary), 2) >= 5801 AND
       ROUND(AVG(e.salary), 2) <= 7500 THEN 'Pleno'
     WHEN ROUND(AVG(e.salary), 2) >= 7501 AND
-      ROUND(AVG(e.salary), 2) <= 10500 THEN 'Senior'
+      ROUND(AVG(e.salary), 2) <= 10500 THEN 'Sênior'
     ELSE 'CEO'
   END AS 'Senioridade'
 FROM employees AS e
