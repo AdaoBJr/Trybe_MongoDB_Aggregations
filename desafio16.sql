@@ -1,3 +1,4 @@
+-- INDENTAÇÃO CONFERIDA COM A DO HENRIQUE CLEMENTINO, JÁ QUE A MINHA NÃO PASSAVA
 USE hr
 DELIMITER $$
 CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionario(email_func VARCHAR(50))
