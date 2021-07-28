@@ -1,1 +1,1 @@
-SELECT JOB_TITLE AS 'CARGO', ( MAX_SALARY - MIN_SALARY) AS 'Diferença entre salários máximo e mínimo' FROM hr.jobs ORDER BY 2, JOB_TITLE;
+SELECT job_title AS 'CARGO', (max_salary - min_salary) AS 'Diferença entre salários máximo e mínimo' FROM hr.jobs ORDER BY 2, job_title;
