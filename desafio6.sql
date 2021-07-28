@@ -7,4 +7,4 @@ from employees e
 inner join job_history h on e.EMPLOYEE_ID = h.EMPLOYEE_ID
 inner join jobs j on h.JOB_ID = j.JOB_ID
 inner join departments d on h.DEPARTMENT_ID = d.DEPARTMENT_ID
-order by concat(e.FIRST_NAME, ' ', e.LAST_NAME) desc, d.DEPARTMENT_NAME desc
+order by concat(e.FIRST_NAME, ' ', e.LAST_NAME) desc, j.JOB_TITLE
