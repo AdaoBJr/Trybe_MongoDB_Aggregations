@@ -1,6 +1,3 @@
-SELECT * FROM hr.jobs;
--- job_title, min_salary and max_salary
-
 SELECT JOB_TITLE as 'Cargo',
 CASE 
 when MAX_SALARY <= 10000 then 'Baixo'

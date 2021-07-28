@@ -1,7 +1,3 @@
-SELECT * FROM hr.employees;
-SELECT * FROM hr.jobs;
--- (SUM(E.SALARY) / count(*))
-
 SELECT J.JOB_TITLE AS 'Cargo', CAST(AVG(E.SALARY) AS DECIMAL(10,2)) AS `Média salarial`,
 CASE
 WHEN CAST(AVG(E.SALARY) AS DECIMAL(10,2)) < 5800 THEN 'Júnior'
