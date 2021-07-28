@@ -7,4 +7,4 @@ from hr.job_history as historico
 inner join hr.employees as employees
 on employees.EMPLOYEE_ID = historico.EMPLOYEE_ID
 where month(historico.START_DATE) between 1 and 3
-order by `Nome Completo` ASC
+order by `Nome Completo` ASC, `Data de início do cargo`ASC
