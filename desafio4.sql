@@ -10,7 +10,7 @@ SELECT
   END AS 'Senioridade'
 FROM 
   hr.jobs j
-   INNER JOIN
+  INNER JOIN
   hr.employees e ON j.JOB_ID = e.JOB_ID
 GROUP BY j.JOB_ID
 ORDER BY AVG(e.SALARY), JOB_TITLE;
