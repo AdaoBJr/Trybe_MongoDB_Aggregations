@@ -5,8 +5,8 @@ RETURNS INT READS SQL DATA
 BEGIN
 DECLARE result INT;
 SELECT COUNT(*)
-FROM employees E
-JOIN job_history JH ON JH.EMPLOYEE_ID = E.EMPLOYEE_ID
+FROM employees AS t1
+JOIN job_history AS t2 ON t2.EMPLOYEE_ID = t1.EMPLOYEE_ID
 WHERE 
 EMAIL = in_email
 INTO in_email;
