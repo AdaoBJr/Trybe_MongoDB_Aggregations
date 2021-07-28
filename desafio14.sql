@@ -1,5 +1,5 @@
 SELECT
-c.Country
+c.Country as 'País'
 FROM w3schools.customers c
 LEFT JOIN w3schools.suppliers s
 ON c.Country = s.Country
