@@ -1,4 +1,6 @@
 USE hr;
+
+
 DELIMITER $$
 
 CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionario(employee_email VARCHAR(100))
@@ -11,5 +13,4 @@ BEGIN
 	where E.EMAIL = employee_email INTO jobs_total;
     RETURN jobs_total;
 END $$
-
 DELIMITER ;

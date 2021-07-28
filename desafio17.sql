@@ -1,4 +1,6 @@
 USE w3schools;
+
+
 DELIMITER $$
 
 CREATE TRIGGER insert_into_orderDate
@@ -7,5 +9,4 @@ FOR EACH ROW
 BEGIN
 	SET NEW.OrderDate = CURRENT_DATE();
 END $$
-
 DELIMITER ;
