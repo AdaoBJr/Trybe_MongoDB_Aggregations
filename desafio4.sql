@@ -9,4 +9,4 @@ FROM hr.jobs AS j
 INNER JOIN hr.employees AS e 
 ON j.JOB_ID = e.JOB_ID
 GROUP BY 1
-ORDER BY e.SALARY, j.JOB_TITLE;
+ORDER BY 2, 1;
