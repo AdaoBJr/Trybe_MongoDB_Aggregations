@@ -1,1 +1,1 @@
-SELECT ucase(concat(e.FIRST_NAME, ' ', e.LAST_NAME)) AS 'Nome completo', jh.START_DATE AS 'Data de início', e.SALARY AS Salário FROM hr.employees e INNER JOIN hr.job_history jh ON e.EMPLOYEE_ID = jh.EMPLOYEE_ID ORDER BY `Nome completo`, `Data de início`;
+SELECT ucase(concat(e.FIRST_NAME, ' ', e.LAST_NAME)) AS 'Nome completo', jh.START_DATE AS 'Data de início', e.SALARY AS Salário FROM hr.employees e INNER JOIN hr.job_history jh ON e.EMPLOYEE_ID = jh.EMPLOYEE_ID WHERE month(jh.START_DATE) IN(01, 02, 03) ORDER BY `Nome completo`, `Data de início`;
