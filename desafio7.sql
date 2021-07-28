@@ -10,4 +10,4 @@ FROM
     jobs AS j ON jh.JOB_ID = j.JOB_ID
 WHERE
     MONTH(START_DATE) IN (1 , 2, 3)
-ORDER BY `Nome completo` , j.JOB_TITLE;
+ORDER BY `Nome completo` , jh.START_DATE;
