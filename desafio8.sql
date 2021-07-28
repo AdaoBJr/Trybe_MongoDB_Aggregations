@@ -1,5 +1,5 @@
 SELECT 
-C.CustomerName as `Nome de contato`
+C.ContactName as `Nome de contato`
 , 
 S.ShipperName as `Empresa que fez o envio`
 , 
