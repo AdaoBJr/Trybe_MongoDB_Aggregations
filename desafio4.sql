@@ -1,4 +1,5 @@
-SELECT b.job_title AS 'Cargo', FORMAT(AVG(a.salary), 2) AS `Média salarial`,
+SELECT b.job_title AS `Cargo`,
+ROUND(AVG(a.salary), 2) AS `Média salarial`,
 CASE
   WHEN AVG(a.salary) > 2000 AND AVG(a.salary) <= 5800 THEN 'Júnior'
   WHEN AVG(a.salary) > 5801 AND AVG(a.salary) <= 7500 THEN 'Pleno'
