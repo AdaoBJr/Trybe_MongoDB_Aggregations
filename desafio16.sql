@@ -4,8 +4,8 @@ DELIMITER $$
 CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionario (input_email VARCHAR(30))
 RETURNS NUMERIC READS SQL DATA
 BEGIN
-DECLARE response INT;
-SELECT CONCAT(COUNT(job_history.JOB_ID))
+DECLARE response VARCHAR(3);
+SELECT COUNT(job_history.JOB_ID)
 FROM hr.job_history AS job_history
 INNER JOIN hr.employees AS employees
 ON employees.EMAIL = input_email
