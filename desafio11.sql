@@ -12,4 +12,5 @@ FROM
 WHERE
     c.Country = c.Country
 GROUP BY c.ContactName , c.Country
+HAVING `Número de compatriotas` <> 0
 ORDER BY Nome;
