@@ -11,7 +11,7 @@ DROP DATABASE IF EXISTS `w3schools`;
 CREATE DATABASE `w3schools` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `w3schools`;
 --
--- Database: `w3schools`
+-- Database: `w3schools ayyy`
 --
 
 -- --------------------------------------------------------
