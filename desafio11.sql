@@ -7,4 +7,3 @@ FROM
     GROUP BY Nome, País
     HAVING `Número de compatriotas` > 1
  ORDER BY Nome;
- 
