@@ -3,5 +3,4 @@ SELECT
   (MAX_SALARY - MIN_SALARY)
   AS 'Diferença entre salários máximo e mínimo'
 FROM hr.jobs
-WHERE MAX_SALARY <> MIN_SALARY
-ORDER BY JOB_TITLE;
+ORDER BY MAX_SALARY <> MIN_SALARY, JOB_TITLE;
