@@ -7,4 +7,4 @@ customers C1
 ,customers C2 WHERE C1.Country = C2.Country
 GROUP BY `Nome`
 HAVING `Número de compatriotas` > 0    
-ORDER BY `Número de compatriotas`;
+ORDER BY `Nome`;
