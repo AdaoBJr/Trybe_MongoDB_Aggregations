@@ -1,5 +1,5 @@
 SELECT 
-CONCAT(LastName, ' ', LastName) AS 'Nome completo',
+CONCAT(FirstName, ' ', LastName) AS 'Nome completo',
 COUNT (*) AS 'Total de pedidos'
 FROM employees AS e
 INNER JOIN orders AS o
