@@ -8,5 +8,5 @@ FROM
 WHERE
     c1.Country = c2.Country
 GROUP BY Nome , País
-HAVING Número de compatriotas > 1
+HAVING `Número de compatriotas` > 1
 ORDER BY Nome;
