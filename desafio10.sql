@@ -1,6 +1,7 @@
-select products.ProductName as 'Produto',
-min(orders.Quantity) as Minima,
-max(orders.Quantity) as Máxima,
+select 
+products.ProductName as 'Produto',
+min(orders.Quantity) as 'Mínima',
+max(orders.Quantity) as 'Máxima',
 round(avg(orders.Quantity), 2) as 'Média'
 from w3schools.order_details as orders
 inner join w3schools.products as products
