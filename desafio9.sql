@@ -1,7 +1,5 @@
-SELECT
-CONCAT(e.FirstName, ' ', e.LastName) 'Nome de contato',
-COUNT(*) 'Total de pedidos'
-FROM w3schools.orders o
-JOIN w3schools.employees e ON e.EmployeeID = o.EmployeeID
-GROUP BY `Nome de contato`
-ORDER BY `Total de pedidos`;
+SELECT CONCAT(t1.FirstName, ' ', t1.LastName)
+'Nome completo', COUNT(*) 'Total de pedidos'
+FROM w3schools.employees 't1'
+INNER JOIN w3schools.orders 't2' ON t1.EmployeeID = t2.EmployeeID
+GROUP BY 1 ORDER BY 2 ASC;
