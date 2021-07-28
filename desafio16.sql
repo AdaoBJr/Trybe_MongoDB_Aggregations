@@ -1,7 +1,7 @@
 USE hr;
-DELIMITER $$;
+DELIMITER $$
 
-CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionario(input_email VARCHAR(30))
+CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionario (input_email VARCHAR(30))
 RETURNS NUMERIC READS SQL DATA
 BEGIN
 DECLARE response INT;
@@ -12,6 +12,6 @@ ON employees.EMAIL = input_email
 WHERE employees.EMPLOYEE_ID = job_history.EMPLOYEE_ID
 INTO response;
 RETURN response;
-END $$;
+END $$
 
 DELIMITER ;
