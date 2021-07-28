@@ -5,4 +5,5 @@ SELECT
 FROM employees AS e
 INNER JOIN job_history AS jh
   ON e.employee_id = jh.employee_id
+WHERE (MONTH(jh.start_date) <= 03)
 ORDER BY UCASE(CONCAT(e.first_name, ' ', e.last_name)), jh.start_date;
