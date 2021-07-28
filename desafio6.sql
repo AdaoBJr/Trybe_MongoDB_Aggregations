@@ -9,5 +9,4 @@ INNER JOIN hr.jobs J
 ON J.JOB_ID = JH.JOB_ID
 INNER JOIN hr.departments D
 ON JH.DEPARTMENT_ID = D.DEPARTMENT_ID
-GROUP BY `Nome completo`
 ORDER BY `Nome completo` DESC, Cargo;
