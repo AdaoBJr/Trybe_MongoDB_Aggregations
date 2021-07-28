@@ -1,14 +1,8 @@
 SELECT 
     CONCAT(e.FirstName, ' ', e.LastName) AS 'Nome completo',
-    COUNT(*) AS  'Total de pedidos'
+    COUNT(*) AS 'Total de pedidos'
 FROM
-    employees AS e
-WHERE
-    EXISTS( SELECT 
-            *
-        FROM
-            orders AS o
-                INNER JOIN
-            customers AS c ON o.CustomerID = c.CustomerID
-        WHERE
-            CONCAT(e.FirstName, ' ', e.LastName) = c.CustomerName);
+    w3schools.orders AS o
+        INNER JOIN
+    w3schools.employees AS e ON o.EmployeeID = e.EmployeeID;
+    
