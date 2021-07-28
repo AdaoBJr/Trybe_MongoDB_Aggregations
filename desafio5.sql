@@ -1,9 +1,6 @@
-SELECT job_title AS 'Cargo',
-CASE
-  WHEN max_salary <= 10000 THEN 'Baixo'
-  WHEN max_salary > 10001 AND max_salary <= 20000 THEN 'Médio'
-  WHEN max_salary > 20001 AND max_salary <= 30000 THEN 'Alto'
-  ELSE 'Altíssimo'
-END AS 'Nível'
+SELECT job_title AS `Cargo`,
+ROUND((max_salary - min_salary), 2) AS `Variação salarial`,
+ROUND((min_salary / 12), 2) AS `Média mínima mensal`,
+ROUND((max_salary  / 12),2 ) AS `Média máxima mensal`
 FROM hr.jobs
-ORDER BY job_title ASC;
+ORDER BY `Variação salarial` ASC, `Cargo` ASC ;
