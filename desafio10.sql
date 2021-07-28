@@ -7,4 +7,4 @@ inner join w3schools.products as products
 on orders.ProductID = products.ProductID
 group by `Produto`
 having avg(orders.Quantity) > 20
-order by avg(orders.Quantity), products.ProductName;
+order by `Média` ASC, `Produto` ASC;
