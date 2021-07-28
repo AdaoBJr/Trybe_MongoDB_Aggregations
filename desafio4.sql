@@ -8,5 +8,5 @@ END AS 'Senioridade'
 FROM hr.jobs J
 INNER JOIN hr.employees E
 ON E.JOB_ID = J.JOB_ID
-GROUP BY `Cargo`
+GROUP BY Cargo
 ORDER BY ROUND(AVG(E.SALARY), 2), `Cargo`;
