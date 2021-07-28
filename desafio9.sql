@@ -1,8 +1,4 @@
-SELECT 
-UCASE(CONCAT(t1.first_name, ' ', t1.last_name)) AS 'Nome completo',
-t2.start_date AS 'Data de início',
-t1.salary AS Salário
-FROM hr.employees AS t1
-JOIN hr.job_history AS t2 ON t1.employee_id = t2.employee_id
-WHERE MONTH(start_date) IN (1 , 2, 3)
-ORDER BY 1 ASC , 2 ASC;
+SELECT CONCAT(t1.FirstName, ' ', t1.LastName) AS 'Nome completo', COUNT(*) AS 'Total de pedidos'
+FROM w3schools.employees AS t1
+JOIN w3schools.orders AS t2 ON t1.EmployeeID = t2.EmployeeID
+GROUP BY 1 ORDER BY 2 ASC;
