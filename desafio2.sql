@@ -12,4 +12,5 @@ END AS "Nível"
 FROM hr.employees employees
 INNER JOIN hr.jobs jobs
 WHERE employees.JOB_ID = jobs.JOB_ID
+GROUP BY jobs.JOB_TITLE
 ORDER BY Cargo ASC;
