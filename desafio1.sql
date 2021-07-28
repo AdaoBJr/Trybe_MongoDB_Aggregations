@@ -1,4 +1,4 @@
-SELECT c.country_name 
+SELECT c.country_name as `País`
 , 
 IF (c.region_id = 
 (
@@ -9,4 +9,5 @@ WHERE region_name = "europe")
 "incluído" 
 , 
 "não incluído") AS "Status Inclusão" 
-FROM hr.countries AS c;
+FROM hr.countries AS c
+ORDER BY `País`;

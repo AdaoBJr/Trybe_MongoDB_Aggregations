@@ -1,6 +1,6 @@
 SELECT j.job_title AS `Cargo`
 , 
-AVG(e.SALARY) AS "Média salarial"
+AVG(e.SALARY) AS `Média salarial`
 , 
 CASE 
 WHEN AVG(e.SALARY) >= 2000 
@@ -14,4 +14,5 @@ END AS "Senioridade"
 FROM hr.employees AS e 
 INNER JOIN hr.jobs AS j 
 WHERE j.JOB_ID = e.JOB_ID 
-GROUP BY `Cargo`;
+GROUP BY `Cargo`
+ORDER BY `Média salarial`, `Cargo`;
