@@ -10,4 +10,4 @@ from hr.employees as e
 INNER JOIN hr.jobs as j
 ON j.JOB_ID = e.JOB_ID
 GROUP BY e.JOB_ID
-ORDER BY AVG(e.SALARY);
+ORDER BY AVG(e.SALARY), JOB_TITLE;
