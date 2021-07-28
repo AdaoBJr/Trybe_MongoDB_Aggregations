@@ -8,4 +8,4 @@ on orders.ShipperID = shippers.ShipperID
 inner join w3schools.customers as customers
 on orders.CustomerID = customers.CustomerID
 where shippers.ShipperName = 'Speedy Express' or shippers.ShipperName = 'United Package'
-order by `Nome de contato` ASC, `Empresa que fez o envio` ASC
+order by `Nome de contato` ASC, `Empresa que fez o envio` ASC, `Data do pedido` ASC
