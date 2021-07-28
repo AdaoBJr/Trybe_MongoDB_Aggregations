@@ -1,11 +1,11 @@
+USE rede_social;
+
 DELIMITER $$
-
-CREATE TRIGGER insert_date
-AFTER INSERT ON orders
-FOR EACH ROW
+CREATE TRIGGER trigger_order_date_insert
+    BEFORE INSERT ON orders
+    FOR EACH ROW
 BEGIN
-INSERT INTO w3schools.orders (OrderDate)
-VALUES (DATE(NOW()))
-END
+    SET NEW.OrderDate = NOW();
+END $$
 
-DELIMITER $$ ;
+DELIMITER ;
