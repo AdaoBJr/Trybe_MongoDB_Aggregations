@@ -1,8 +1,23 @@
-SELECT JOB_TITLE as 'Cargo', CASE
-When MAX_SALARY >5000 and MAX_SALARY<= 10000  THEN 'Baixo'
-When MAX_SALARY >10000 and MAX_SALARY<= 20000 THEN 'Médio'
-When MAX_SALARY >20000 and MAX_SALARY<= 30000 THEN 'Alto'
-ELSE  'Altíssimo'
-END AS 'Nível' 
-FROM hr.jobs
+SELECT 
+    JOB_TITLE AS 'Cargo',
+    CASE
+        WHEN
+            MAX_SALARY > 5000
+                AND MAX_SALARY <= 10000
+        THEN
+            'Baixo'
+        WHEN
+            MAX_SALARY > 10000
+                AND MAX_SALARY <= 20000
+        THEN
+            'Médio'
+        WHEN
+            MAX_SALARY > 20000
+                AND MAX_SALARY <= 30000
+        THEN
+            'Alto'
+        ELSE 'Altíssimo'
+    END AS 'Nível'
+FROM
+    hr.jobs
 ORDER BY JOB_TITLE;
