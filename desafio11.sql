@@ -1,4 +1,3 @@
-select * from w3schools.customers;
 SELECT 
     c1.ContactName AS 'Nome',
     c1.Country AS 'País',
@@ -11,5 +10,5 @@ SELECT
                 ) AS 'Número de compatriotas'
 FROM
     w3schools.customers AS c1
-    ORDER BY c1.ContactName ;
-  
+    ORDER BY c1.ContactName;
+    
