@@ -4,7 +4,7 @@ SELECT
         'incluído',
         'não incluído') AS 'Status Inclusão'
 FROM
-    hr.countries AS countries
+    countries
         INNER JOIN
-    hr.regions AS regions ON regions.REGION_ID = countries.REGION_ID
+    regions ON regions.REGION_ID = countries.REGION_ID
 ORDER BY countries.COUNTRY_NAME ASC;
