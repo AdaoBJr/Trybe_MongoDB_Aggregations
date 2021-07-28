@@ -1,8 +1,9 @@
-select
-	concat(e.FirstName, ' ', e.LastName) as 'Nome Completo',
-    count(*) as 'Total de pedidos'
-from w3schools.orders as o
-inner join w3schools.employees as e on o.EmployeeID = e.EmployeeID
-group by o.EmployeeID
-order by count(o.OrderID)
-    
+SELECT 
+    CONCAT(e.FirstName, ' ', e.LastName) AS 'Nome Completo',
+    COUNT(*) AS 'Total de pedidos'
+FROM
+    w3schools.orders AS o
+        INNER JOIN
+    w3schools.employees AS e ON o.EmployeeID = e.EmployeeID
+GROUP BY o.EmployeeID
+ORDER BY COUNT(o.OrderID)
