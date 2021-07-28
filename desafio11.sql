@@ -8,4 +8,5 @@ SELECT
   AND t1.ContactName <> t2.ContactName)
   AS 'Número de compatriotas'
 FROM w3schools.customers AS t1
+HAVING `Número de compatriotas` <> 0
 ORDER BY t1.ContactName;
