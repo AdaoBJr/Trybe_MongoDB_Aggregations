@@ -1,4 +1,4 @@
-SELECT CONCAT(E.FirstName, ' ', E.LastName) 'Nome Completo',
+SELECT CONCAT(E.FirstName, ' ', E.LastName) 'Nome completo',
 COUNT(O.EmployeeID) 'Total de pedidos'
 FROM w3schools.employees E
 INNER JOIN w3schools.orders O
