@@ -1,6 +1,3 @@
--- https://github.com/tryber/sd-010-b-mysql-vocabulary-booster/pull/11/files
--- Consulta no repositório de fabio maturano, estava confundindo algum pensamento e não estava usando o having
--- para filtrar o agrupamento.
 select products.ProductName as 'Produto',
 min(orders.Quantity) as Minima,
 max(orders.Quantity) as Máxima,
