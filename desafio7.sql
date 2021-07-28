@@ -7,4 +7,3 @@ JOIN hr.job_history jh ON e.EMPLOYEE_ID = jh.EMPLOYEE_ID
 WHERE 
 MONTH(jh.START_DATE) BETWEEN 1 AND 3
 ORDER BY `Nome completo`, jh.START_DATE;
-
