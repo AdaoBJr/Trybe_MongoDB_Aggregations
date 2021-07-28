@@ -1,0 +1,1 @@
+SELECT JOB_TITLE AS Cargo, concat(MAX_SALARY - MIN_SALARY) AS 'Variação Salarial', concat(round(MIN_SALARY / 12, 2)) AS 'Média mínima mensal', concat(round(MAX_SALARY / 12, 2)) AS 'Média máxima mensal' FROM hr.jobs ORDER BY length(`Variação Salarial`), `Variação Salarial`, Cargo;
