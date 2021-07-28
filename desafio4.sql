@@ -12,4 +12,4 @@ FROM
         INNER JOIN
     employees AS e where j.JOB_ID = e.JOB_ID
 GROUP BY cargo
-ORDER BY 'Média Salarial' , cargo;
+ORDER BY `Média Salarial` , Cargo;
