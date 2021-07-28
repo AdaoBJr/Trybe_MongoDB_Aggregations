@@ -1,4 +1,6 @@
 -- https://stackoverflow.com/questions/36756971/inner-join-and-average-in-sql
+-- Perycles Turma 10 - Tribo A
+-- Lucas Lara - Turma 10 - Tribo A
 select  jobs.JOB_TITLE as Cargo , ROUND(avg(employees.salary),2) as 'Média salarial',
 case 
 when ROUND(avg(employees.salary),2) between 2000 and 5800 then 'Júnior'
@@ -11,8 +13,3 @@ inner join hr.employees as employees
 on jobs.JOB_ID = employees.JOB_ID
 group by jobs.JOB_TITLE
 order by `Média salarial` ASC, Cargo ASC
-
-
-
-
-
