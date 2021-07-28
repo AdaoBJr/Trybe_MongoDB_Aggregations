@@ -1,0 +1,9 @@
+DROP TRIGGER IF EXISTS `OnInsertNewOrder`;
+DELIMITER $$
+CREATE TRIGGER OnInsertNewOrder
+BEFORE INSERT ON w3schools.orders
+FOR EACH ROW
+BEGIN
+SET NEW.OrderDate = now();
+END $$
+DELIMITER ;
