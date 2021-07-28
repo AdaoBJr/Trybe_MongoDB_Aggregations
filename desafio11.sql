@@ -1,7 +1,14 @@
-select
-	c.ContactName as "Nome",
-    c.Country as "País",
-    ( select count(*) from w3schools.customers as c1 where c1.Country = c.Country and c1.ContactName != c.ContactName) as `Número de compatriotas`
-from w3schools.customers as c
-having `Número de compatriotas` != 0
-order by c.ContactName;
+SELECT 
+    c.ContactName AS 'Nome',
+    c.Country AS 'País',
+    (SELECT 
+            COUNT(*)
+        FROM
+            w3schools.customers AS c1
+        WHERE
+            c1.Country = c.Country
+                AND c1.ContactName != c.ContactName) AS Número de compatriotas
+FROM
+    w3schools.customers AS c
+HAVING Número de compatriotas != 0
+ORDER BY c.ContactName;
