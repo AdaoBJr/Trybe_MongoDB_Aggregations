@@ -7,7 +7,9 @@ WHEN jobs.MAX_SALARY BETWEEN 10001 AND 20000
 THEN "Médio"
 WHEN jobs.MAX_SALARY BETWEEN 20001 AND 30000
 THEN "Alto"
-ELSE "Altíssimo"
+WHEN jobs.MAX_SALARY > 30000
+THEN "Altíssimo"
+ELSE "Nenhum deles"
 END AS "Nível"
 FROM hr.jobs jobs
 ORDER BY Cargo ASC;
