@@ -8,4 +8,4 @@ INSERT INTO w3schools.orders (OrderDate)
 VALUES (DATE(NOW()))
 END
 
-DELIMITER $$
+DELIMITER $$ ;
