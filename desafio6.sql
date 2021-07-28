@@ -1,8 +1,3 @@
-SELECT * FROM hr.employees;
-SELECT * FROM hr.jobs;
-SELECT * FROM hr.job_history;
-SELECT * FROM hr.departments;
-
 SELECT CONCAT(FIRST_NAME, ' ', LAST_NAME) AS `Nome completo`,
 J.JOB_TITLE AS `Cargo`,
 H.START_DATE AS `Data de início do cargo`,
