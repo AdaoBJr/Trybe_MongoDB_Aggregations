@@ -5,4 +5,5 @@ SELECT
 FROM w3schools.customers AS t1, w3schools.customers AS t2
 WHERE t1.Country = t2.Country
 GROUP BY t1.ContactName, t2.Country
-HAVING `Número de compatriotas` > 1;
+HAVING x > 1
+ORDER BY t1.ContactName;
