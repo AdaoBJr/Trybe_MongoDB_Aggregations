@@ -1,4 +1,4 @@
-select distinct Country from customers
+select distinct Country País from customers
 union
-select distinct Country from suppliers
-order by Country limit 5;
+select distinct Country  from suppliers
+order by País limit 5;
