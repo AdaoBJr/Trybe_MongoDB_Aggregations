@@ -18,5 +18,4 @@ WHERE input_email = employees.EMAIL
 ORDER BY Departamento ASC,
 Cargo ASC;
 END $$
-
 DELIMITER ;
