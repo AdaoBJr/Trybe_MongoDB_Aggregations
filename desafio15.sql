@@ -1,5 +1,5 @@
 USE hr;
-DELIMITER $$;
+DELIMITER $$
 
 CREATE PROCEDURE buscar_media_por_cargo(IN jobTitle VARCHAR(50))
 BEGIN
@@ -10,7 +10,7 @@ FROM
         INNER JOIN
     jobs j ON j.JOB_ID = e.JOB_ID
 WHERE
-    j.JOB_TITLE = jobTitle	
+    j.JOB_TITLE = jobTitle;
 END $$
 
 DELIMITER ;
