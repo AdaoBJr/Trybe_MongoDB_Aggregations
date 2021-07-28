@@ -9,5 +9,5 @@ SELECT  ROUND(AVG(e.SALARY),2) 'Média salarial'
 FROM hr.employees e
 INNER JOIN hr.jobs j
 ON j.JOB_ID = e.JOB_ID
-GROUP BY  j.JOB_TITLE;
+GROUP BY  j.JOB_TITLE
 HAVING j.JOB_TITLE = title; END $$ DELIMITER ; CALL buscar_media_por_cargo('Programmer');
