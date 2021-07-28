@@ -10,3 +10,4 @@ inner join hr.departments as departments
 on historico.DEPARTMENT_ID = departments.DEPARTMENT_ID
 inner join hr.jobs as jobs
 on historico.JOB_ID = jobs.JOB_ID
+order by `Nome Completo` DESC, Cargo ASC
