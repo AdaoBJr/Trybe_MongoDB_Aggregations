@@ -10,7 +10,6 @@ SELECT
   END AS 'Senioridade'
 FROM
     hr.employees AS emp
-        INNER JOIN
-    hr.jobs AS j ON emp.job_id = j.job_id
+    INNER JOIN hr.jobs AS j ON emp.job_id = j.job_id
 GROUP BY Cargo
 ORDER BY 2, 1;
