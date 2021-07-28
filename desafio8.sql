@@ -5,4 +5,5 @@ o.OrderDate AS `Data do pedido`
 FROM w3schools.orders o
 INNER JOIN w3schools.customers c ON c.CustomerID = o.CustomerID
 INNER JOIN w3schools.shippers s ON s.ShipperID = o.ShipperID
+WHERE s.ShipperName IN ('Speedy Express', 'United Package')
 ORDER BY `Nome de contato`, `Empresa que fez o envio`, `Data do pedido`
