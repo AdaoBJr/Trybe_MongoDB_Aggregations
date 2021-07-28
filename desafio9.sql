@@ -1,5 +1,5 @@
 SELECT 
-    CONCAT(e.FirstName, ' ', e.LastName) AS 'Nome Completo',
+    CONCAT(e.FirstName, ' ', e.LastName) AS 'Nome completo',
     COUNT(*) AS 'Total de pedidos'
 FROM
     employees AS e
