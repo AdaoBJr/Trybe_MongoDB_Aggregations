@@ -5,4 +5,4 @@ ROUND(MIN_SALARY / 12, 2) 'Média mínima mensal',
 ROUND(MAX_SALARY / 12, 2) 'Média máxima mensal'
 FROM
 jobs
-ORDER BY `Variação Salarial` , JOB_TITLE;
+ORDER BY `Variação Salarial`, JOB_TITLE;
