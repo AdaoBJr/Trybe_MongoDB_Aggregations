@@ -9,4 +9,4 @@ FROM
     jobs j ON j.JOB_ID = e.JOB_ID
         INNER JOIN
     departments ON departments.DEPARTMENT_ID = e.DEPARTMENT_ID
-ORDER BY Nome completo DESC , Cargo ASC;
+ORDER BY `Nome completo` DESC , Cargo ASC;
