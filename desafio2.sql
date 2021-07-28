@@ -8,4 +8,5 @@ SELECT
         ELSE 'Muito Baixo'
     END AS nível
 FROM
-    hr.jobs;
+    hr.jobs
+ORDER BY JOB_TITLE;
