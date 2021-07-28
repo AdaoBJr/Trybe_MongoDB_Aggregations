@@ -1,5 +1,5 @@
 select 
-concat(employees.FIRST_NAME,' ',employees.LAST_NAME) as 'Nome Completo', 
+concat(employees.FIRST_NAME,' ',employees.LAST_NAME) as 'Nome completo', 
 jobs.JOB_TITLE as Cargo,
 historico.START_DATE as 'Data de início do cargo',
 departments.DEPARTMENT_NAME AS 'Departamento'
