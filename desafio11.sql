@@ -6,7 +6,7 @@ SELECT
         FROM
             customers c
         WHERE
-            c.Country = País) AS 'Número de compartriotas'
+            c.Country = País) AS 'Número de compatriotas'
 FROM
     customers c
 WHERE
