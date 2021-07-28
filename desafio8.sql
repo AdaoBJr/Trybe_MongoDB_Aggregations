@@ -9,4 +9,5 @@ FROM
         INNER JOIN
     w3schools.shippers AS s ON s.ShipperName IN ('Speedy Express' , 'United Package')
 ORDER BY c.ContactName ASC , s.ShipperName ASC , o.OrderDate ASC;
+
  
