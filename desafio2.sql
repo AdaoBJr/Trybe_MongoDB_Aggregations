@@ -8,7 +8,7 @@ SELECT
         ELSE 'Não especificado'
     END AS 'Nível'
 FROM
-    hr.jobs jobs
-ORDER BY Cargo ASC
+    jobs
+ORDER BY Cargo ASC;
 
 -- reference: https://www.w3schools.com/mysql/func_mysql_case.asp

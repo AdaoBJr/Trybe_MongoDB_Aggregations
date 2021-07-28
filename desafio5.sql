@@ -5,4 +5,4 @@ SELECT
     ROUND(j.MAX_SALARY / 12, 2) AS 'Média máxima mensal'
 FROM
     jobs j
-ORDER BY 'Variação salarial' ASC , Cargo ASC
+ORDER BY 'Variação salarial' ASC , Cargo ASC;
