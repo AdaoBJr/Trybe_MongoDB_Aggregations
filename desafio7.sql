@@ -1,4 +1,5 @@
 -- https://www.eversql.com/sql-order-of-operations-sql-query-order-of-execution/
+-- Andre Menezes
 select UCASE(concat(employees.FIRST_NAME,' ',employees.LAST_NAME)) as 'Nome completo', 
 historico.START_DATE as 'Data de início',
 employees.SALARY as 'Salário'
