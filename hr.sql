@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.6.33, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: w3resour_hr
+-- Host: localhost    Database: w3resour_hr 
 -- ------------------------------------------------------
 -- Server version 5.6.33-0ubuntu0.14.04.1
 DROP database if exists hr;
