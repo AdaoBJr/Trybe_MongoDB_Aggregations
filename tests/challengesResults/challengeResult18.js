@@ -2,7 +2,7 @@ const challengeResult18 = [
   {
     'Nome completo': 'Den Raphaely',
     'Data de início': '24/03/1998',
-    'Data de rescisão': '31/12/1999',
+    'Data de rescisão': '31/12/1999', 
     'Anos trabalhados': '1.77'
   },
   {
