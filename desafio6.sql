@@ -13,5 +13,5 @@ ON cargo.JOB_ID = h.JOB_ID
 INNER JOIN departments AS d
 ON d.DEPARTMENT_ID = h.DEPARTMENT_ID
 
-ORDER BY CONCAT(FIRST_NAME, ' ',LAST_NAME) DESC,
-cargo.JOB_TITLE;
+ORDER BY `Nome completo` DESC,
+`Cargo`;

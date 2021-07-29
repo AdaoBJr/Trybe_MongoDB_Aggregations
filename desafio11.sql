@@ -9,4 +9,4 @@ SELECT
   AS 'Número de compatriotas'
 FROM customers AS t1
 HAVING `Número de compatriotas` <> 0
-ORDER BY t1.ContactName;
+ORDER BY `Nome`;

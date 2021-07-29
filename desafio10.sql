@@ -9,4 +9,4 @@ ON  o.ProductID = p.ProductID
 
 GROUP BY p.ProductID
 HAVING AVG(o.Quantity) > 20
-ORDER BY AVG(o.Quantity), p.ProductName;
+ORDER BY `Média`, `Produto`;

@@ -8,4 +8,4 @@ ON o.CustomerID = c.CustomerID
 INNER JOIN shippers AS s
 ON s.ShipperID = o.ShipperID
 WHERE s.ShipperID IN (1,2)
-ORDER BY c.ContactName, s.ShipperName, o.OrderDate;
+ORDER BY `Nome de contato`, `Empresa que fez o envio`, `Data do pedido`;

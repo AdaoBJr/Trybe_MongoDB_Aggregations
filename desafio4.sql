@@ -10,4 +10,4 @@ FROM employees AS info
 LEFT JOIN jobs AS cargo
 ON info.JOB_ID = cargo.JOB_ID
 GROUP  BY info.JOB_ID
-ORDER BY AVG(SALARY), cargo.JOB_TITLE;
+ORDER BY `Média salarial`, `Cargo`;
