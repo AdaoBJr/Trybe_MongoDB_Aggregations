@@ -11,4 +11,4 @@ FROM
 WHERE
     e1.JOB_ID = e2.JOB_ID
         AND e1.EMPLOYEE_ID <> e2.EMPLOYEE_ID
-ORDER BY e1.FIRST_NAME , e2.FIRST_NAME;
+ORDER BY  `Nome completo funcionário 1`, `Nome completo funcionário 2`;
