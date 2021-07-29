@@ -1,1 +1,1 @@
-CALL buscar_media_por_cargo('Programmer');
+SELECT buscar_quantidade_de_empregos_por_funcionario('NKOCHHAR');
