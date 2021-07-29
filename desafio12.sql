@@ -1,4 +1,3 @@
-select * from hr.employees;
 SELECT
   CONCAT(e1.FIRST_NAME, ' ', e1.LAST_NAME) AS 'Nome completo funcionário 1', 
   e1.SALARY AS 'Salário funcionário 1',
