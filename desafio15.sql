@@ -12,4 +12,3 @@ GROUP BY j.JOB_TITLE
 END $$
 DELIMITER ;
 CALL buscar_media_por_cargo('Programmer');
-    
