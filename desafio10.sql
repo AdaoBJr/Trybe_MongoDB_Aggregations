@@ -8,4 +8,5 @@ FROM
         INNER JOIN
     w3schools.order_details o ON p.ProductID = o.ProductID
 GROUP BY ProductName
+HAVING ROUND(AVG(o.Quantity), 2) > 20
 ORDER BY Média , ProductName;
