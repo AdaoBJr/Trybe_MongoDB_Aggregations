@@ -1,4 +1,4 @@
- SELECT DISTINCT
+SELECT DISTINCT
     Country AS 'País'
 FROM
     w3schools.customers 
