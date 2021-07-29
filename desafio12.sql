@@ -9,5 +9,5 @@ FROM
     employees e1,
     employees e2
 WHERE e1.JOB_ID = e2.JOB_ID AND e1.FIRST_NAME != e2.FIRST_NAME
-ORDER BY e1.FIRST_NAME, e2.FIRST_NAME
+ORDER BY `Nome completo funcionário 2`, `Nome completo funcionário 2`
 LIMIT 100000;
