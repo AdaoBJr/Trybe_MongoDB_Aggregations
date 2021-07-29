@@ -1,10 +1,8 @@
-SELECT	 a.ContactName AS 'Nome',
-		 a.Country AS 'País',
-		 COUNT(b.Country) - 1 AS 'Número de compatriotas'
-FROM  w3schools.customers AS a,
-      w3schools.customers AS b
-WHERE a.Country = b.Country
-GROUP BY a.ContactName,
-		 a.Country
-HAVING COUNT(b.Country) - 1 <> 0
-ORDER BY a.ContactName;
+SELECT c1.ContactName AS 'Nome',
+        c1.Country AS 'País', (COUNT(*) - 1) AS 'Número de compatriotas'
+FROM w3schools.customers AS c1,
+      w3schools.customers AS c2
+WHERE c1.Country = c2.Country
+GROUP BY c1.ContactName, c1.Country
+HAVING (COUNT(*) - 1) > 0
+ORDER BY Nome;

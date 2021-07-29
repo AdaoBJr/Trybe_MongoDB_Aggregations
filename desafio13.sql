@@ -1,5 +1,5 @@
 SELECT p.ProductName AS 'Produto',
-        p.Price AS 'Preço'
+       p.Price AS 'Preço'
 FROM w3schools.products p
 WHERE EXISTS
     (SELECT *
