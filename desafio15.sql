@@ -7,4 +7,3 @@ INNER JOIN hr.jobs j ON j.JOB_ID = e.JOB_ID
 WHERE j.JOB_TITLE = TITLE;
 END $$
 DELIMITER ;
-
