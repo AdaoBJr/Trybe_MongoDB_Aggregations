@@ -10,7 +10,9 @@ FROM
     employees e
 INNER JOIN job_history jh
 on e.EMPLOYEE_ID = jh.EMPLOYEE_ID
-WHERE e.EMAIL = email;
-
+WHERE e.EMAIL = email
+into total_empregos;
+return total_empregos;
 END $$
 DELIMITER ;
+
