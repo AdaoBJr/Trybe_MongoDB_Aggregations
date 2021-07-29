@@ -5,7 +5,7 @@ SELECT
             hr.jobs
         WHERE
             jobs.JOB_ID = hr.employees.JOB_ID) AS Cargo,
-    ROUND(SUM(employees.SALARY) / COUNT(*)) AS 'Média salarial',
+    ROUND(SUM(employees.SALARY) / COUNT(*), 2) AS 'Média salarial',
     CASE
         WHEN ROUND(SUM(employees.SALARY) / COUNT(*)) <= 5800 THEN 'Júnior'
         WHEN
