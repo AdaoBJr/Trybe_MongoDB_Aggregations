@@ -1,5 +1,5 @@
 SELECT 
-    c.CustomerName AS 'Nome',
+    c.ContactName AS 'Nome',
     c.country AS 'País',
     COUNT(c.Country) - 1 AS 'Número de compatriotas'
 FROM
