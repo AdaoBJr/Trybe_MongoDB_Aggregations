@@ -19,7 +19,7 @@ SELECT
         THEN
             'Sênior'
         ELSE 'CEO'
-    END AS Nível
+    END AS Senioridade
 FROM
     hr.employees
 GROUP BY employees.JOB_ID
