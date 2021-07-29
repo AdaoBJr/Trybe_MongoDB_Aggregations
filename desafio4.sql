@@ -13,7 +13,7 @@ ORDER BY avg(e.SALARY) ASC, j.JOB_TITLE; -- README pede.
 -- relativa ao salário do cargo deste JOB_ID(pra isso eu uso o GROUP BY) e uma coluna sobre SENIORIDADE.
 -- SOBRE GROUP BY: Eu uso pra agrupar todos os cargos 1 vez na lista(ex: Pra evitar que apareça 17 vezes um
 -- cargo de STOCK CLERK). Ao agrupar, só aparece 1X no resultado. E SÓ ASSIM DÁ CERTO. Quando agrupo os cargos
--- relativos a determinado JOB_ID, fica melhor pro mysql fazer a média do SALARY deste cargo específico.alter
+-- relativos a determinado JOB_ID, fica melhor pro mysql fazer a média do SALARY deste cargo específico.
 
 -- Este requisito eu precisei de ajuda em alguns detalhes. Tive ajuda do Colega Henrique Clementino
 -- Link: https://github.com/tryber/sd-010-b-mysql-vocabulary-booster/pull/40/commits/77b04a6928fa5270d19165062ce74197396b2329
