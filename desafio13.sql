@@ -1,5 +1,5 @@
 use w3school;
-SELECT 
+SELECT
 	p.ProductName as Produto,
     p.Price as Preço
 FROM
