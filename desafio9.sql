@@ -1,7 +1,7 @@
-SELECT CustomerName AS `Nome completo`,
-COUNT(O.CustomerID) AS `Total de pedidos`
-FROM w3schools.customers C
+SELECT CONCAT(FirstName, ' ', LastName) AS `Nome completo`,
+COUNT(O.EmployeeID) AS `Total de pedidos`
+FROM w3schools.employees E
 INNER JOIN w3schools.orders O
-ON C.CustomerID = O.CustomerID
-GROUP BY O.CustomerID
+ON E.EmployeeID = O.EmployeeID
+GROUP BY O.EmployeeID
 ORDER BY `Total de pedidos`;
