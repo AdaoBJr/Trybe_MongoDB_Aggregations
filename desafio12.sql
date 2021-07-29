@@ -8,5 +8,5 @@ SELECT
 FROM hr.employees AS e1,
       hr.employees AS e2
 WHERE e1.JOB_ID = e2.JOB_ID
-AND e1.FIRST_NAME <> e2.FIRST_NAME
+AND Concat(e1.FIRST_NAME, ' ', e1.LAST_NAME) <> Concat(e2.FIRST_NAME, ' ', e2.LAST_NAME)
 ORDER BY Concat(e1.FIRST_NAME, ' ', e1.LAST_NAME), Concat(e2.FIRST_NAME, ' ', e2.LAST_NAME);
