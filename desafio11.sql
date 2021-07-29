@@ -6,5 +6,5 @@ where
 customersA.Country = customersB.Country 
 And 
 customersA.ContactName <> customersB.ContactName
-group by `Nome`
+group by `Nome`, `País`
 order by `Nome` ASC;
