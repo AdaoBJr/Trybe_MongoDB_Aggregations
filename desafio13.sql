@@ -1,9 +1,9 @@
-SELECT p.ProductName AS 'Produto',
-       p.Price AS 'Preço'
-FROM w3schools.products p
-WHERE EXISTS
-    (SELECT *
-      FROM w3schools.order_details d
-      WHERE p.ProductID = d.ProductID
-        AND d.Quantity > 80)
-ORDER BY Produto;
+SELECT
+  p.ProductName AS 'Produto',
+  p.Price AS 'Preço'
+FROM products p
+INNER JOIN order_details od
+  ON p.ProductID = od.ProductID
+WHERE od.Quantity > 80
+GROUP BY p.ProductID
+ORDER BY p.ProductName;
