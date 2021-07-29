@@ -8,4 +8,3 @@ AND c1.ContactName <> c2.ContactName
 GROUP BY c1.ContactName, c1.Country
 HAVING `Número de compatriotas` > 0
 ORDER BY c1.ContactName;
-
