@@ -6,6 +6,6 @@ FROM w3schools.customers cs
 LEFT JOIN w3schools.customers AS c
   ON cs.Country = c.Country
 GROUP BY cs.ContactName,
-         cs.Country
+          cs.Country
 HAVING COUNT(c.Country) > 1
 ORDER BY cs.ContactName;
