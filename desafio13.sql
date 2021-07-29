@@ -1,4 +1,3 @@
-use w3school;
 SELECT p.ProductName as 'Produto', p.Price as 'Preço'
 FROM
     order_details od
