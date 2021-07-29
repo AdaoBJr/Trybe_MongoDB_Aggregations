@@ -1,15 +1,7 @@
 -- Iniciando o projeto
-# média salarial e o nível de senioridade das pessoas empregadas, agrupadas pelo cargo
+# Cargos com sua variação salarial e médias (max, min) mensal, considerando (max, min) como anuais
 
-SELECT jobs.JOB_TITLE AS 'Cargo',
-ROUND(AVG(employees.SALARY), 2) AS 'Média salarial', CASE
-WHEN ROUND(AVG(employees.SALARY), 2) BETWEEN 2000 AND 5800 THEN 'Júnior'
-WHEN ROUND(AVG(employees.SALARY), 2) BETWEEN 5801 AND 7500 THEN 'Pleno'
-WHEN ROUND(AVG(employees.SALARY), 2) BETWEEN 7501 AND 10500 THEN 'Sênior'
-ELSE 'CEO'
-END AS 'Senioridade'
-FROM hr.jobs AS jobs
-INNER JOIN hr.employees AS employees
-ON employees.JOB_ID = jobs.JOB_ID
-GROUP BY JOB_TITLE
-ORDER BY ROUND(AVG(employees.SALARY), 2) ASC, JOB_TITLE ASC;
+SELECT JOB_TITLE AS 'Cargo',
+(jobs.MAX_SALARY, jobs.MIN_SALARY) AS 'Variação Salarial',
+ROUND((jobs.MIN_SALARY / 12), 2) AS 'Média mínima mensal',
+ROUND((jobs.MAX_SALARY / 12), 2) AS 'Média máxima mensal'
