@@ -1,0 +1,1 @@
+SELECT concat(FirstName, ' ', LastName) AS 'Nome Completo' FROM w3schools.employees; 
