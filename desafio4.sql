@@ -1,7 +1,7 @@
 -- Iniciando o projeto
 # média salarial e o nível de senioridade das pessoas empregadas, agrupadas pelo cargo
 
-SELECT jobs.JOB_TITLE AS 'CARGO',
+SELECT jobs.JOB_TITLE AS 'Cargo',
 ROUND(AVG(employees.SALARY), 2) AS 'Média salarial', CASE
 WHEN ROUND(AVG(employees.SALARY), 2) BETWEEN 2000 AND 5800 THEN 'Júnior'
 WHEN ROUND(AVG(employees.SALARY), 2) BETWEEN 5801 AND 7500 THEN 'Pleno'
