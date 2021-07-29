@@ -6,4 +6,3 @@ FROM
     w3schools.order_details AS od ON od.ProductID = p.ProductID
 WHERE
     Quantity > 80;
-    
