@@ -9,4 +9,3 @@ FROM  hr.employees AS a,
 WHERE a.JOB_ID = b.JOB_ID
   AND e1.EMPLOYEE_ID <> e2.EMPLOYEE_ID
 ORDER BY CONCAT(a.FIRST_NAME, ' ', a.LAST_NAME), CONCAT(b.FIRST_NAME, ' ', b.LAST_NAME);
-          
