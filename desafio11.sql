@@ -1,2 +1,5 @@
-SELECT 
-ContactName AS 'Nome', Country AS 'País' FROM w3schools.customers;
+SELECT
+  Country,
+  COUNT(*)
+FROM w3schools.customers
+GROUP BY Country;
