@@ -6,5 +6,5 @@ JOIN w3schools.shippers AS shippers
 ON shippers.ShipperID = orders.ShipperID
 JOIN w3schools.employees AS wemployees
 ON wemployees.EmployeeID = orders.EmployeeID
-WHERE shippers.ShipperName IN ('Speedy Express', 'United Package')
+WHERE shippers.ShipperName IN (1, 2)
 ORDER BY `Nome de contato`, `Empresa que fez o envio`, `Data do pedido`;
