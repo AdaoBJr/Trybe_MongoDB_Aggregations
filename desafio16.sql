@@ -15,10 +15,3 @@ RETURN valor;
 END $$
 
 DELIMITER ;
-
-SELECT buscar_quantidade_de_empregos_por_funcionario('NKOCHHAR');
-SELECT  COUNT(*) FROM hr.employees AS E
-INNER JOIN 	hr.job_history  AS HR
-ON HR.EMPLOYEE_ID = E.EMPLOYEE_ID
-WHERE EMAIL = 'NKOCHHAR';
-
