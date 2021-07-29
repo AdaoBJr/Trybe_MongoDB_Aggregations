@@ -1,0 +1,10 @@
+DELIMITER $$
+
+CREATE TRIGGER addDateInOrder
+AFTER INSERT ON orders
+FOR EACH ROW
+BEGIN
+	SET NEW.OrderDate = DATE(NOW());
+END $$    
+
+DELIMITER ;
