@@ -8,6 +8,6 @@ SELECT
 FROM
     employees e1,
     employees e2
-WHERE e1.JOB_ID = e2.JOB_ID AND e1.FIRST_NAME != e2.FIRST_NAME
-ORDER BY `Nome completo funcionário 2`, `Nome completo funcionário 2`
+WHERE e1.JOB_ID = e2.JOB_ID AND concat(e1.FIRST_NAME, ' ', e1.LAST_NAME) != concat(e2.FIRST_NAME, ' ', e2.LAST_NAME)
+ORDER BY `Nome completo funcionário 1`, `Nome completo funcionário 2`
 LIMIT 100000;
