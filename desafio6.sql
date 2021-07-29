@@ -7,8 +7,3 @@ inner join hr.job_history as j on e.EMPLOYEE_ID = j.EMPLOYEE_ID
 inner join hr.jobs job ON job.JOB_ID = j.JOB_ID
 inner join hr.departments as d on d.DEPARTMENT_ID = j.DEPARTMENT_ID
 order by `Nome completo` desc, `Cargo`
-
-
-
-
-
