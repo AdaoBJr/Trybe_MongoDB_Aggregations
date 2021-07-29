@@ -11,4 +11,3 @@ INTO qnt_jobs;
 RETURN qnt_jobs;
 END $$
 DELIMITER ;
-
