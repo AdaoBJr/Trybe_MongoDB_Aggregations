@@ -2,7 +2,7 @@ SELECT
   ProductName AS 'Produto',
   MIN(QUANTITY) AS 'Mínima',
   MAX(QUANTITY) AS 'Máxima',
-  AVG(QUANTITY) AS 'Média'
+  ROUND(AVG(QUANTITY), 2) AS 'Média'
 FROM w3schools.products AS p
 INNER JOIN w3schools.order_details AS o
   ON o.ProductID = p.ProductID
