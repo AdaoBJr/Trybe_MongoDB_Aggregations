@@ -5,7 +5,7 @@ begin
 select Round(avg(e.salary), 2) as 'Média salarial'
 from hr.employees as e
 inner join hr.jobs as j
-where e.EMPLOYEE_ID = j.EMPLOYEE_ID and j.JOB_TITLE = cargo;
+where e.JOB_ID = j.JOB_ID and j.JOB_TITLE = cargo;
 end $$
 
 DELIMITER ;
