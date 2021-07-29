@@ -7,7 +7,7 @@ FROM hr.job_history AS h
 JOIN hr.employees AS e
   ON h.employee_id = e.employee_id
 JOIN hr.jobs AS j
-  ON j.JOB_ID = e.JOB_ID
+  ON j.JOB_ID = h.JOB_ID
 JOIN hr.departments AS d
-  ON d.DEPARTMENT_ID = e.DEPARTMENT_ID
+  ON d.DEPARTMENT_ID = h.DEPARTMENT_ID
 ORDER BY 1 DESC, 2;
