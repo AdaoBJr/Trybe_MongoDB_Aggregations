@@ -1,4 +1,4 @@
-SELECT P.ProductName 'Produto', P.Price
+SELECT P.ProductName 'Produto', P.Price 'Preço'
 FROM w3schools.products P 
 INNER JOIN w3schools.order_details OD
 ON OD.ProductID = P.ProductID
