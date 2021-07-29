@@ -10,7 +10,7 @@ IF(DAY(h.END_DATE)> 9, DAY(h.END_DATE), CONCAT('0', DAY(h.END_DATE))),
 "/", 
 IF(MONTH(h.END_DATE) > 9, MONTH(h.END_DATE), CONCAT('0',MONTH(h.END_DATE))),
 "/",
-YEAR(h.END_DATE)) AS `Data de recisão`,
+YEAR(h.END_DATE)) AS `Data de rescisão`,
 ROUND(DATEDIFF(h.END_DATE, START_DATE) / 365, 2) AS `Anos trabalhados`
 FROM hr.job_history AS h
 INNER JOIN hr.employees AS e ON e.EMPLOYEE_ID = h.EMPLOYEE_ID
