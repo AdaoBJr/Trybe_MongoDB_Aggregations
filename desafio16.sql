@@ -17,4 +17,3 @@ return total_empregos;
 END $$
 
 DELIMITER ;
-
