@@ -1,6 +1,5 @@
-SELECT
-  DISTINCT c.Country AS 'País'
-FROM customers AS c
-INNER JOIN suppliers AS s
-ORDER BY c.Country
+SELECT Country AS 'País' FROM customers
+UNION
+SELECT Country AS 'País' FROM suppliers
+ORDER BY `País`
 LIMIT 5;
