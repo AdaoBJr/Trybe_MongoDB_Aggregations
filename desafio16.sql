@@ -4,6 +4,7 @@ CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionario(email varchar(150)
 RETURNS INT READS SQL DATA
 BEGIN
 
+DECLARE total_empregos DOUBLE;
 SELECT 
     COUNT(*) AS total_empregos
 FROM
@@ -14,5 +15,6 @@ WHERE e.EMAIL = email
 into total_empregos;
 return total_empregos;
 END $$
+
 DELIMITER ;
 
