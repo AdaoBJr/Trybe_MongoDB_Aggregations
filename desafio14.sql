@@ -7,4 +7,4 @@ UNION
 SELECT suplier.Country FROM w3schools.customers AS customer
 RIGHT JOIN w3schools.suppliers AS suplier ON customer.Country = suplier.Country
 GROUP BY 1
-ORDER BY `País`;
+ORDER BY País;
