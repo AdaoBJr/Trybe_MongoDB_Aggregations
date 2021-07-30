@@ -9,5 +9,5 @@ SELECT
             c2.Country = `País`) AS 'Número de compatriotas'
 FROM
     w3schools.customers AS c
-GROUP BY `Nome`
+GROUP BY `Nome` HAVING `Número de compatriotas` > 0 
 ORDER BY `Nome`;
