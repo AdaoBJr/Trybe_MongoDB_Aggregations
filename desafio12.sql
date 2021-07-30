@@ -1,5 +1,6 @@
 -- Consulta no repositorio de Fabio Maturano
 -- https://github.com/tryber/sd-010-b-mysql-vocabulary-booster/pull/11
+-- Zambelli e Vinicius Vasconcellos
 select 
 concat(employeesA.FIRST_NAME,' ', employeesA.LAST_NAME) as 'Nome completo funcionário 1',
 employeesA.SALARY as 'Salário funcionário 1',
