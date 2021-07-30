@@ -19,4 +19,4 @@ FROM hr.jobs AS j
 INNER JOIN hr.employees AS e
     ON j.JOB_ID = e.JOB_ID
 GROUP BY  j.JOB_ID
-ORDER BY  2 ASC
+ORDER BY  2 ASC, 1 ASC;
