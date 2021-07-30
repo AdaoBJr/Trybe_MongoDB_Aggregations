@@ -7,11 +7,10 @@ SELECT ROUND(AVG(e.SALARY),2) as "Média salarial"
 FROM hr.jobs j
 inner join hr.employees e on j.JOB_ID = e.JOB_ID
 where j.JOB_TITLE = cargo;
-END $$
+END$$
 DELIMITER ; -- tem que ter um espaço antes do ;buscar_media_por_cargo
 
--- Tive a ajuda do Colega Henrique Clementino para alguns entedimentos neste requisito.
--- Link: https://github.com/tryber/sd-010-b-mysql-vocabulary-booster/pull/40/commits/98916142577f6fbb4e846c3773cd7ef617d7f43e
+
 
 -- A ideia é criar essa procedure e chamar ela em outro arquivo usando a profissão Programmer.
 -- No parâmetro da procedure eu usei o Varchar porque vai ser alguma coisa palavra escrita(ex: Programmer)
