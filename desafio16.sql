@@ -13,3 +13,6 @@ WHERE employe.EMAIL = email_f INTO quantidade_e;
 RETURN quantidade_e;
 END $$
 DELIMITER ;
+SELECT buscar_quantidade_de_empregos_por_funcionario('NKOCHHAR');
+
+-- Error Code: 1304. FUNCTION buscar_quantidade_de_empregos_por_funcionario already exists
