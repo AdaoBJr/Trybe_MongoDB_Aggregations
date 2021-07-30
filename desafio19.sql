@@ -6,7 +6,7 @@ BEGIN
 
 DECLARE total_pepleos int;
 SELECT 
-   COUNT(*) AS total
+	COUNT(*) AS total
 FROM
     hr.employees
 WHERE month(HIRE_DATE) = mes AND year(HIRE_DATE) =  ano
