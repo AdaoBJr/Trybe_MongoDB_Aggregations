@@ -7,4 +7,4 @@ DATE_FORMAT(job_h.END_DATE, '%d/%m/%y') AS 'Data de rescisão',
 ROUND(DATEDIFF(job_h.END_DATE, job_h.START_DATE) / 365, 2) AS 'Anos trabalhados'
 FROM hr.job_history AS job_h
 INNER JOIN hr.employees AS employe ON employe.EMPLOYEE_ID = job_h.EMPLOYEE_ID
-ORDER BY 1 ASC, 4 ASC;
+ORDER BY 1, 4 ASC;
