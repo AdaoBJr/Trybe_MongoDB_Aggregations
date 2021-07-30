@@ -1,4 +1,3 @@
-select * from hr.employees;
 USE hr;
 DELIMITER $$
 CREATE PROCEDURE exibir_historico_completo_por_funcionario(email VARCHAR(50))
