@@ -8,7 +8,7 @@ FROM hr.jobs j
 inner join hr.employees e on j.JOB_ID = e.JOB_ID
 where j.JOB_TITLE = cargo;
 END$$
-DELIMITER ; -- tem que ter um espaço antes do ;buscar_media_por_cargo
+DELIMITER ; 
 
 
 
