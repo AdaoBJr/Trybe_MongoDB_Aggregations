@@ -8,7 +8,7 @@ FROM
         INNER JOIN
     hr.job_history AS jh ON e.EMPLOYEE_ID = jh.EMPLOYEE_ID
         INNER JOIN
-    hr.departments AS d ON jh.DEPARTMENT_ID = d.DEPARTMENT_ID
+    hr.departments AS d ON d.DEPARTMENT_ID = jh.DEPARTMENT_ID 
         INNER JOIN
     hr.jobs AS j ON j.JOB_ID = jh.JOB_ID
-ORDER BY e.FIRST_NAME DESC , e.LAST_NAME ASC;
+ORDER BY e.FIRST_NAME DESC , e.LAST_NAME ASC, JOB_TITLE ASC;
