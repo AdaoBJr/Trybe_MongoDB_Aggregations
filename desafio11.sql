@@ -8,5 +8,3 @@ WHERE a.country = b.country
 GROUP BY  a.Country, a.ContactName
 HAVING COUNT(b.country) - 1 <> 0
 ORDER BY a.ContactName;
-
-
