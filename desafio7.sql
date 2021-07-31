@@ -1,4 +1,4 @@
-Select UPPER(CONCAT(e.FIRST_NAME,' ',e.LAST_NAME)) as "Nome Completo",
+Select UPPER(CONCAT(e.FIRST_NAME,' ',e.LAST_NAME)) as "Nome completo",
 jh.START_DATE as "Data de início",
 e.Salary as 'Salário'
 from hr.job_history as jh
