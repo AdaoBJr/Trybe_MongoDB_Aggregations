@@ -1,3 +1,5 @@
+-- 4 - Exiba a média salarial e o nível de senioridade de todas as pessoas empregadas, agrupadas pelo cargo
+
 SELECT 
     j.job_title AS 'Cargo',
     ROUND(AVG(e.salary), 2) AS 'Média salarial',

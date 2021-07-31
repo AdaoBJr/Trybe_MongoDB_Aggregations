@@ -1,3 +1,5 @@
+-- 12 - Faça um relatório que lista todas as pessoas funcionárias que possuem o mesmo cargo
+
 SELECT 
     c.ContactName AS 'Nome',
     c.Country AS 'País',

@@ -1,7 +1,11 @@
+-- 18 - Faça um relatório que mostra o histórico de cargos das pessoas empregadas, mostrando as datas de início e de saída, assim como os anos que ela ficou nesse cargo
+
 select
 concat(e.first_name, ' ', e.last_name) as `Nome completo`,
-DATE_FORMAT(jh.start_date, "%d/%m/%Y") as 'Data de início', -- https://stackoverflow.com/questions/10637581/mysql-date-format-dd-mm-yyyy-select-query
-DATE_FORMAT(jh.end_date, "%d/%m/%Y") as 'Data de rescisão', -- https://stackoverflow.com/questions/10637581/mysql-date-format-dd-mm-yyyy-select-query
+DATE_FORMAT(jh.start_date, "%d/%m/%Y") as 'Data de início', 
+-- https://stackoverflow.com/questions/10637581/mysql-date-format-dd-mm-yyyy-select-query
+DATE_FORMAT(jh.end_date, "%d/%m/%Y") as 'Data de rescisão', 
+-- https://stackoverflow.com/questions/10637581/mysql-date-format-dd-mm-yyyy-select-query
 round(datediff(jh.end_date, jh.start_date)/365, 2) as `Anos trabalhados`
 from
 hr.job_history as jh
