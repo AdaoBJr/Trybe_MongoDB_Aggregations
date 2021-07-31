@@ -6,5 +6,5 @@ INNER JOIN order_details AS od
   ON p.ProductID = od.ProductID
 WHERE od.Quantity > 80
 GROUP BY p.ProductName,
-         p.Price
+          p.Price
 ORDER BY p.ProductName;
