@@ -1,5 +1,6 @@
 DELIMITER $$
-CREATE PROCEDURE buscar_media_por_cargo(IN cargo VARCHAR(50), OUT media_salarial DECIMAL(8,2) )
+
+CREATE PROCEDURE buscar_media_por_cargo(IN cargo VARCHAR(50))
 
 BEGIN
   SELECT 
@@ -7,12 +8,8 @@ BEGIN
   FROM employees as e
   INNER JOIN jobs as j
   ON e.JOB_ID = j.JOB_ID
-  WHERE j.JOB_TITLE = cargo
-  INTO media_salarial;
+  WHERE j.JOB_TITLE = cargo;
 END $$
 
 DELIMITER ;
-
-SET @media_salarial;
-CALL buscar_media_por_cargo('Programmer', @media_salarial);
-SELECT @media_salarial
+CALL buscar_media_por_cargo('Programmer');
