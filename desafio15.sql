@@ -13,5 +13,6 @@ END $$
 
 DELIMITER ;
 
+SET @media_salarial;
 CALL buscar_media_por_cargo('Programmer', @media_salarial);
-SELECT @media_salarial 
+SELECT @media_salarial
