@@ -1,3 +1,5 @@
+-- 6 - Faça um relatório que mostra o histórico de cargos das pessoas empregadas
+
 SELECT 
     job_title AS 'Cargo',
     (max_salary - min_salary) AS 'Variação Salarial',
