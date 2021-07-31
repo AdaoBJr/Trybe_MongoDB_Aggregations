@@ -1,13 +1,13 @@
-SELECT JOB_TITLE AS 'Cargo',
+SELECT job_title AS 'Cargo',
     CASE
-    WHEN MAX_SALARY > 5000
-        AND MAX_SALARY < 10000 THEN
+    WHEN max_salary >= 5000
+        AND max_salary <= 10000 THEN
     'Baixo'
-    WHEN MAX_SALARY > 10001
-        AND MAX_SALARY < 20000 THEN
+    WHEN max_salary >= 10001
+        AND max_salary <= 20000 THEN
     'Médio'
-    WHEN MAX_SALARY > 20001
-        AND MAX_SALARY < 30000 THEN
+    WHEN max_salary >= 20001
+        AND max_salary <= 30000 THEN
     'Alto'
     ELSE 'Altíssimo'
     END AS 'Nível'
