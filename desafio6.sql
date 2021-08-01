@@ -8,3 +8,4 @@ INNER JOIN hr.jobs AS J
   ON J.JOB_ID = E.JOB_ID
 INNER JOIN hr.departments AS D
   ON D.DEPARTMENT_ID = E.DEPARTMENT_ID
+  
