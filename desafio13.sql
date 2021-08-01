@@ -1,0 +1,1 @@
+SELECT p.ProductName `Produto`, p.Price `Preço` FROM products p INNER JOIN order_details o ON o.ProductID = p.ProductID WHERE o.Quantity > 80 ORDER BY `Produto`;
