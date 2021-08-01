@@ -9,7 +9,7 @@ SELECT COUNT(*)
 FROM hr.job_history AS jbh
 INNER JOIN hr.employees AS emp
 ON jbh.EMPLOYEE_ID = emp.EMPLOYEE_ID
-WHERE email = CONCAT('%', email_employee, '%')
+WHERE email = email_employee
 INTO total_de_empregos;
 RETURN total_de_empregos;	
 END
