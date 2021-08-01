@@ -13,4 +13,3 @@ FROM
 WHERE
     o.ShipperID IN (1,2)
 ORDER BY c.ContactName ASC , s.ShipperName ASC , o.OrderDate ASC;
-© 2021 GitHub, Inc.
