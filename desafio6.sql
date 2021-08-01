@@ -10,4 +10,4 @@ INNER JOIN hr.employees d
 ON d.employee_id = e.employee_id
 INNER JOIN hr.departments g
 ON g.department_id = e.department_id
-ORDER BY CONCAT(d.first_name, ' ', d.last_name) DESC;
+ORDER BY CONCAT(d.first_name, ' ', d.last_name) DESC, j.job_title;
