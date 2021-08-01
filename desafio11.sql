@@ -1,0 +1,1 @@
+SELECT c1.ContactName `Nome`, c1.Country `País`, (SELECT COUNT(*) FROM customers c2 WHERE c1.Country = c2.Country AND c1.ContactName <> c2.ContactName) `Número de compatriotas` FROM customers c1 HAVING `Número de compatriotas` <> 0 ORDER BY `Nome`;
