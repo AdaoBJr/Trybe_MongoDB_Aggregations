@@ -1,4 +1,4 @@
- -- use w3schools;
+-- use w3schools;
 delimiter $$
 create trigger trigger_OrderDate
   before insert on w3schools.orders
@@ -8,5 +8,4 @@ begin
   -- set new.OrderDate = CURRENT_DATE() as duas formas retorna a data;
 end $$
 delimiter ;
-
   
