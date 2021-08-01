@@ -4,7 +4,8 @@ FROM
   (SELECT
     CustomerName, Country
   FROM
-    w3schools.customers UNION ALL SELECT
+    w3schools.customers UNION ALL
+    SELECT
     SupplierName, Country
   FROM
     w3schools.suppliers
