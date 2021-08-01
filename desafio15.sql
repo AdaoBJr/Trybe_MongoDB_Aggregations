@@ -1,4 +1,4 @@
-USE HR;
+USE HR
 DELIMITER $$
 
 CREATE PROCEDURE buscar_media_por_cargo(IN selectedJob VARCHAR(50), OUT averageSalary DOUBLE)
