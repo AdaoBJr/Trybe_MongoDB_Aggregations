@@ -6,4 +6,4 @@ FROM
     w3schools.order_details AS O ON P.productID = O.productID
 WHERE
     O.Quantity > 80
-ORDER BY Produto;
+ORDER BY `Produto`;
