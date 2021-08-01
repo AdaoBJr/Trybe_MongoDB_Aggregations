@@ -8,4 +8,3 @@ begin
   -- set new.OrderDate = CURRENT_DATE() as duas formas retorna a data;
 end $$
 delimiter ;
-  
