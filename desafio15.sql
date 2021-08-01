@@ -8,7 +8,6 @@ BEGIN
 	INNER JOIN hr.jobs AS jbs
 	ON emp.JOB_ID = jbs.JOB_ID
 	WHERE JOB_TITLE = selectedJob;
-END
-$$
+END$$
 
 DELIMITER ;
