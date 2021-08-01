@@ -1,0 +1,1 @@
+SELECT c.Country `País` FROM customers c UNION SELECT s.Country `País` FROM suppliers s ORDER BY `País` LIMIT 5;
