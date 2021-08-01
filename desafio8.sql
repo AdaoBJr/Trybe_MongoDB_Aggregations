@@ -11,6 +11,6 @@ FROM
     w3schools.shippers AS s
     ON o.ShipperID = s.ShipperID
 WHERE
-   o.ShipperID IN (1 , 2)
+    o.ShipperID IN (1 , 2)
 ORDER BY
 	1 ASC, 2 ASC, 3 ASC;
