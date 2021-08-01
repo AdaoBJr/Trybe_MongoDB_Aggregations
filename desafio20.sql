@@ -14,7 +14,8 @@ FROM
   ON t2.DEPARTMENT_ID = t3.DEPARTMENT_ID
   INNER JOIN hr.jobs AS t4
   ON t2.JOB_ID = t4.JOB_ID
-WHERE t1.EMAIL = email;
+WHERE t1.EMAIL = email
+ORDER BY `Departamento`, `Cargo`;
 END $$ 
 
 DELIMITER ;
