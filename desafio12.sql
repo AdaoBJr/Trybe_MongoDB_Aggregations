@@ -1,16 +1,14 @@
--- 12 - Faça um relatório que lista todas as pessoas funcionárias que possuem o mesmo cargo
-
 SELECT 
-    c.ContactName AS 'Nome',
-    c.Country AS 'País',
-    (SELECT 
-            COUNT(*)
-        FROM
-            w3schools.customers AS c1
-        WHERE
-            c1.Country = c.Country
-                AND c1.ContactName != c.ContactName) AS `Número de compatriotas`
+    CONCAT(e.FIRST_NAME, ' ', e.LAST_NAME) AS 'Nome completo funcionário 1',
+    e.SALARY AS 'Salário funcionário 1',
+    e.PHONE_NUMBER AS 'Telefone funcionário 1',
+    CONCAT(e2.FIRST_NAME, ' ', e2.LAST_NAME) AS 'Nome completo funcionário 2',
+    e2.SALARY AS 'Salário funcionário 2',
+    e2.PHONE_NUMBER AS 'Telefone funcionário 2'
 FROM
-    w3schools.customers AS c
-HAVING `Número de compatriotas` != 0
-ORDER BY c.ContactName;
+    hr.employees e,
+    hr.employees e2
+WHERE
+    e.JOB_ID = e2.JOB_ID
+        AND e.EMPLOYEE_ID != e2.EMPLOYEE_ID
+ORDER BY CONCAT(e.FIRST_NAME, ' ', e.LAST_NAME) , CONCAT(e2.FIRST_NAME, ' ', e2.LAST_NAME);
