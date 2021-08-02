@@ -1,5 +1,5 @@
-select concat(e.first_name, '', e.last_name) as "Nome completo",
-j.job_title as Cargo,
+select concat(e.first_name, " ", e.last_name) as "Nome completo",
+j.job_title as 'Cargo',
 jh.START_DATE as "Data de início do cargo",
 d.DEPARTMENT_NAME as "Departamento"
 from `hr`.`employees` as e
