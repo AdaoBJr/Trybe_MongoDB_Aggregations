@@ -1,0 +1,1 @@
+SELECT concat(e.firstname, ' ', e.lastname) as 'Nome completo', count(1) as 'Total de pedidos' FROM w3schools.orders o join w3schools.employees e on o.EmployeeID = e.EmployeeID group by `Nome completo` order by `Total de pedidos`;

@@ -1,0 +1,1 @@
+SELECT c.ContactName as 'Nome de contato', s.ShipperName as 'Empresa que fez o envio', o.OrderDate as 'Data do pedido' FROM w3schools.orders o join w3schools.customers c on o.CustomerID = c.CustomerID join w3schools.shippers s on o.ShipperID = s.ShipperID where s.ShipperID in(1, 2) order by c.CustomerName, s.ShipperName, o.OrderDate;

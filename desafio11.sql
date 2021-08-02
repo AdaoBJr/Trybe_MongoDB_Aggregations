@@ -1,0 +1,1 @@
+select c.contactname as 'Nome', p.country as 'País', (p.People - 1) as 'Número de compatriotas' From w3schools.customers c join (SELECT country, (count(Country)) as 'People' FROM w3schools.customers group by Country having People > 1) p on c.Country = p.Country order by Nome;
