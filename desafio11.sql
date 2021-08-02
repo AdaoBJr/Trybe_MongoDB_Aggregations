@@ -12,7 +12,6 @@ GROUP BY
   c1.ContactName, c1.Country
 ORDER BY
   `Nome`;
-
 /*SELECT
   c1.ContactName `Nome`,
   c1.Country `País`,
@@ -28,3 +27,4 @@ FROM
 ORDER BY
   `Nome`;
   */
+  
