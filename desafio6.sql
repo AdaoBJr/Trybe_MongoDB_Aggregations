@@ -10,4 +10,4 @@ FROM
   INNER JOIN departments AS d ON d.DEPARTMENT_ID = jh.DEPARTMENT_ID
 ORDER BY
   'Nome completo' DESC,
-  JOB_TITLE;
+  Cargo;
