@@ -1,9 +1,5 @@
-SELECT 
-  C.Country AS 'País'
-FROM
-  w3schools.customers AS C
-INNER JOIN w3schools.suppliers AS S
-  ON S.Country = C.Country
-GROUP BY C.Country
-ORDER BY C.Country
+SELECT country AS 'País' FROM w3schools.customers
+UNION
+SELECT country AS 'País' FROM w3schools.suppliers
+ORDER BY País
 LIMIT 5;
