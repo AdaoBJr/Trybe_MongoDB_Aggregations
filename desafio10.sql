@@ -11,4 +11,4 @@ ON
   P.ProductID = OD.ProductID
 GROUP BY P.ProductName
 HAVING AVG(OD.Quantity) > 20
-ORDER BY AVG(OD.Quantity);
+ORDER BY AVG(OD.Quantity), P.ProductName;
