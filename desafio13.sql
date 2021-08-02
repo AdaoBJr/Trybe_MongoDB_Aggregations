@@ -1,0 +1,1 @@
+SELECT p.productName as 'Produto', p.price as 'Preço' FROM w3schools.order_details as od INNER JOIN w3schools.products as p ON od.productID = p.productID WHERE od.quantity > 80 ORDER BY p.productName;
