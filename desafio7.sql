@@ -7,7 +7,7 @@ SELECT
     WHERE
       hr.employees.EMPLOYEE_ID = hr.job_history.EMPLOYEE_ID
   ) AS 'Nome completo',
-  START_DATE AS 'Data de início do cargo',
+  START_DATE AS 'Data de início',
   (
     SELECT
       SALARY
