@@ -12,5 +12,5 @@ FROM
         INNER JOIN
     hr.jobs AS jobs_table ON history_table.JOB_ID = jobs_table.JOB_ID
         INNER JOIN
-    hr.departments AS departments_table ON employees_table.DEPARTMENT_ID = departments_table.DEPARTMENT_ID
+    hr.departments AS departments_table ON history_table.DEPARTMENT_ID = departments_table.DEPARTMENT_ID
 ORDER BY `Nome completo` DESC , Cargo ASC;
