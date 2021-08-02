@@ -1,4 +1,3 @@
- 
 SELECT 
     p.ProductName AS 'Produto',
     p.Price AS 'Preço'
