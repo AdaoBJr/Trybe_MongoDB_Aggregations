@@ -1,8 +1,8 @@
 SELECT
-  P.ProductName,
+  P.ProductName AS 'Produto',
   MIN(OD.Quantity) AS 'Mínima',
   MAX(OD.Quantity) AS 'Máxima',
-  ROUND((MIN(OD.Quantity) + MAX(OD.Quantity)) / 2, 2) AS 'Média'
+  ROUND(AVG(OD.Quantity), 2) AS 'Média'
 FROM
   w3schools.order_details AS OD
 INNER JOIN
@@ -10,4 +10,5 @@ INNER JOIN
 ON
   P.ProductID = OD.ProductID
 GROUP BY OD.ProductID
-ORDER BY (MIN(OD.Quantity) + MAX(OD.Quantity)) / 2, P.ProductName;
+HAVING AVG(OD.Quantity) > 20
+ORDER BY (MIN(OD.Quantity) + MAX(OD.Quantity)) / 2;
