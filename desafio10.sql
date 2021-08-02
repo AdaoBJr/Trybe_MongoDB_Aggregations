@@ -1,1 +1,1 @@
-SELECT p.ProductName as 'Produto', min(od.Quantity) as 'Mínima', max(od.Quantity) as 'Máxima', round(avg(od.Quantity), 2) as 'Média' FROM w3schools.order_details od join w3schools.products p on od.productid = p.productid group by od.ProductID having `Média` > 20 order by `Média`, 'Produto';
+SELECT p.ProductName as 'Produto', min(od.Quantity) as 'Mínima', max(od.Quantity) as 'Máxima', round(avg(od.Quantity), 2) as 'Média' FROM w3schools.order_details od join w3schools.products p on od.productid = p.productid group by od.ProductID having `Média` > 20 order by `Média`, Produto;
