@@ -25,8 +25,9 @@ SELECT
       hr.departments.DEPARTMENT_ID = hr.job_history.DEPARTMENT_ID
   ) AS Departamento
 FROM
-  hr.job_history -- WHERE
-  --   EMPLOYEE_ID <> 0
+  hr.job_history
+WHERE
+  EMPLOYEE_ID <> 0
 ORDER BY
   (
     SELECT
@@ -36,4 +37,4 @@ ORDER BY
     WHERE
       hr.employees.EMPLOYEE_ID = hr.job_history.EMPLOYEE_ID
   ) DESC,
-  Cargo;
+  Cargo
