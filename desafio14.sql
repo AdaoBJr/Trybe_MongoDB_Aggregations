@@ -6,4 +6,4 @@ INNER JOIN w3schools.suppliers AS S
   ON S.Country = C.Country
 GROUP BY C.Country
 ORDER BY C.Country
-LIMIT 5
+LIMIT 5;
