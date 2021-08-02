@@ -1,5 +1,5 @@
 SELECT 
-    ProductName AS Produto, Price AS Preço
+    product.ProductName AS Produto, product.Price AS Preço
 FROM
     w3schools.products AS product
         INNER JOIN
