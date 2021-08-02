@@ -1,7 +1,3 @@
-SELECT * FROM hr.employees;
-select * from hr.jobs;
-SELECT * FROM hr.job_history;
-
 SELECT CONCAT(F1.FIRST_NAME, ' ', F1.LAST_NAME) AS 'Nome completo funcionário 1',
 F1.SALARY AS 'Salário funcionário 1',
 F1.PHONE_NUMBER AS 'Telefone funcionário 1',
