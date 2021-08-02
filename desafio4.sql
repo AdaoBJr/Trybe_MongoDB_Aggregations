@@ -24,4 +24,3 @@ GROUP BY
 ORDER BY
   ROUND(AVG(SALARY), 2),
   Cargo;
-  
