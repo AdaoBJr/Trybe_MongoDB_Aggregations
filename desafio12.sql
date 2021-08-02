@@ -9,4 +9,4 @@ FROM hr.employees e1, hr.employees e2
 WHERE 
   e1.JOB_ID = e2.JOB_ID AND e1.EMPLOYEE_ID <> e2.EMPLOYEE_ID
 ORDER BY
-	`Nome completo funcionário 1`, `Nome completo funcionário 2`;
+  `Nome completo funcionário 1`, `Nome completo funcionário 2`;
