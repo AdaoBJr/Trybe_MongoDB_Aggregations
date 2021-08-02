@@ -35,4 +35,5 @@ ORDER BY
       hr.employees
     WHERE
       hr.employees.EMPLOYEE_ID = hr.job_history.EMPLOYEE_ID
-  ) DESC;
+  ) DESC,
+  Cargo;
