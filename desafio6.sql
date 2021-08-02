@@ -10,7 +10,7 @@ FROM
         INNER JOIN
     hr.job_history AS history_table ON employees_table.EMPLOYEE_ID = history_table.EMPLOYEE_ID
         INNER JOIN
-    hr.jobs AS jobs_table ON employees_table.JOB_ID = jobs_table.JOB_ID
+    hr.jobs AS jobs_table ON history_table.JOB_ID = jobs_table.JOB_ID
         INNER JOIN
     hr.departments AS departments_table ON employees_table.DEPARTMENT_ID = departments_table.DEPARTMENT_ID
 ORDER BY `Nome completo` DESC , Cargo ASC;
