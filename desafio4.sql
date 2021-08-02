@@ -1,5 +1,9 @@
 /* 4 - Exiba a média salarial e o nível de senioridade de todas as pessoas empregadas, agrupadas pelo cargo */
-
+/*
+  Material consultado sobre ordem das operações SQL
+  https://www.sisense.com/blog/sql-query-order-of-operations/
+  https://learnsql.com/blog/sql-order-of-operations/
+*/
 /* SOLUCAO 2 */
 SELECT
   j.JOB_TITLE 'Cargo',
