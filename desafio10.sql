@@ -9,6 +9,6 @@ INNER JOIN
   w3schools.products AS P
 ON
   P.ProductID = OD.ProductID
-GROUP BY OD.ProductID
+GROUP BY P.ProductName
 HAVING AVG(OD.Quantity) > 20
-ORDER BY (MIN(OD.Quantity) + MAX(OD.Quantity)) / 2;
+ORDER BY AVG(OD.Quantity);
