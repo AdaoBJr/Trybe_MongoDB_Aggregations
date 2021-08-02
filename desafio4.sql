@@ -1,5 +1,12 @@
 SELECT
-  JOB_ID AS Cargo,
+  (
+    SELECT
+      JOB_TITLE
+    FROM
+      hr.jobs
+    WHERE
+      hr.employees.JOB_ID = hr.jobs.JOB_ID
+  ) AS Cargo,
   ROUND(AVG(SALARY), 2) AS 'Média salarial',
   CASE
     WHEN ROUND(AVG(SALARY), 2) BETWEEN 2000
@@ -17,3 +24,4 @@ GROUP BY
 ORDER BY
   ROUND(AVG(SALARY), 2),
   Cargo;
+  
