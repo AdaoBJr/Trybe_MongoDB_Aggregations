@@ -1,0 +1,1 @@
+SELECT p.productName as 'Produto', MIN(od.quantity) as 'Mínima', MAX(od.quantity) as 'Máxima', ROUND(AVG(quantity), 2) as 'Média' FROM w3schools.order_details as od INNER JOIN w3schools.products as p ON od.productID = p.productID GROUP BY od.productID HAVING AVG(quantity) > 20.00 ORDER BY AVG(quantity), p.productName;
