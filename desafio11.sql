@@ -1,0 +1,1 @@
+SELECT c.contactName as 'Nome', c.country as 'País', COUNT(c.country = c1.country) - 1 as 'Número de compatriotas' FROM w3schools.customers as c, w3schools.customers as c1 WHERE c.country = c1.country GROUP BY c.customerID ORDER BY c.contactName;
