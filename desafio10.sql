@@ -5,5 +5,6 @@ ROUND(AVG(od.Quantity), 2) AS `Média`
 FROM products AS p
 JOIN order_details AS od
 ON p.ProductID = od.ProductID
-GROUP BY p.ProductName
+GROUP BY od.ProductID
+HAVING `Média` > 20
 ORDER BY `Média` ASC, `Produto`;
