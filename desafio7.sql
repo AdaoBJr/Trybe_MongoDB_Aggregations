@@ -4,4 +4,6 @@ employees.SALARY AS 'Salário'
 FROM hr.employees AS employees
 INNER JOIN hr.job_history AS jh
 ON employees.EMPLOYEE_ID = jh.EMPLOYEE_ID
+GROUP BY jh.START_DATE
+HAVING MONTH(jh.START_DATE) BETWEEN 1 AND 3
 ORDER BY `Nome completo`, `Data de início`;
