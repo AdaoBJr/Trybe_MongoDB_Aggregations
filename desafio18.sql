@@ -9,4 +9,3 @@ WHERE month(hire_date) = current_month and year(hire_date) = current_year
 INTO hiredByMonthAndYear;
 RETURN hiredByMonthAndYear;
 END $$ DELIMITER ;
-
