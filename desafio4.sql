@@ -1,1 +1,13 @@
-select j.job_title as 'Cargo', round(avg(e.salary), 2) as 'Média salarial', case when round (avg(e.salary), 2) between 2000 and 5800 then 'Júnior' when round(avg(e.salary), 2) between 5801 and 7500 then 'Pleno' when round(avg(e.salary), 2) between 7501 and 10500 then 'Sênior' when avg(e.salary) > 10500 then 'CEO' else 'have you ever watched the Office??' end as 'Senioridade' from hr.jobs as j inner join hr.employees as e on e.job_id = j.jobs_id group by job_title order by round(avg(e.salary), 2) asc, job_title asc;
+select j.job_title as 'Cargo',
+round(avg(e.salary), 2)  as 'Média salarial',
+case
+when avg(e.salary) between 2000 and 5800 then 'Júnior'
+when avg(e.salary) between 5801 and 7500 then 'Pleno'
+when avg(e.salary) between 7501 and 10500 then 'Sênior'
+when avg(e.salary) > 10500 then 'CEO'    
+end as 'Senioridade'
+from jobs j
+inner join employees e
+on j.JOB_ID = e.JOB_ID
+group by `Cargo`
+order by `Média Salarial`, `Cargo`;
