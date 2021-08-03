@@ -5,3 +5,4 @@ SELECT ROUND(AVG(emp.SALARY), 2) AS `Média salarial`
 FROM r.employees AS emp
 INNER JOIN hr.jobs AS jb ON emp.JOB_ID = jb.JOB_ID AND jb.JOB_TITLE = job_title;
 END $$ DELIMITER ;
+
