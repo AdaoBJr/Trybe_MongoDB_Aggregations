@@ -6,5 +6,5 @@ INNER JOIN w3schools.orders AS orders
 ON customers.CustomerID = orders.CustomerID
 INNER JOIN w3schools.shippers AS shippers
 ON shippers.ShipperID = orders.ShipperID
-WHERE ShipperName IN (1, 2)
+WHERE shippers.ShipperName IN (1, 2)
 ORDER BY `Nome de contato`, `Empresa que fez o envio`, `Data do pedido`;
