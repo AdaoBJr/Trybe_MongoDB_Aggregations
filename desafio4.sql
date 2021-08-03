@@ -10,4 +10,4 @@ FROM hr.jobs AS jobs
 INNER JOIN hr.employees AS employees
 ON jobs.JOB_ID = employees.JOB_ID
 GROUP BY employees.JOB_ID
-ORDER BY `Média salarial` ASC, `Cargo` ASC;
+ORDER BY 'Média salarial' ASC, Cargo ASC;
