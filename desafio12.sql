@@ -8,4 +8,3 @@ FROM `hr`.`employees` as e, `hr`.`employees` as c
 WHERE e.JOB_ID = c.JOB_ID 
 AND e.EMPLOYEE_ID <> c.EMPLOYEE_ID
 order by `Nome completo funcionário 1`, `Nome completo funcionário 2`;
-
