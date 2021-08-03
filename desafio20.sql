@@ -4,8 +4,7 @@ CREATE PROCEDURE exibir_historico_completo_por_funcionario(IN email VARCHAR(20))
 BEGIN
   SELECT CONCAT(e.First_Name, ' ', e.Last_Name) AS 'Nome completo',
   d.DEPARTMENT_NAME AS 'Departamento',
-  j.JOB_TITLE AS 'Cargo'
-  FROM employees AS e
+  j.JOB_TITLE AS 'Cargo' FROM employees AS e
   INNER JOIN job_history AS h
   ON e.EMPLOYEE_ID = h.EMPLOYEE_ID
   INNER JOIN jobs AS j
