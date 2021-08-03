@@ -7,6 +7,6 @@ WHEN  ROUND(AVG(e.SALARY), 2) >10500 THEN 'CEO'
 END AS 'Senioridade'
 FROM hr.employees as e
 INNER JOIN hr.jobs as j
-WHERE e.JOB_ID = j.JOB_ID
+ON e.JOB_ID = j.JOB_ID
 GROUP BY j.JOB_ID
 ORDER BY ROUND(AVG(e.SALARY), 2);
