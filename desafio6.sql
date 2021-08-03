@@ -6,7 +6,7 @@ FROM employees AS e
 JOIN job_history AS jh
 ON e.EMPLOYEE_ID = jh.EMPLOYEE_ID
 JOIN jobs as j
-ON e.JOB_ID = j.JOB_ID
+ON jh.JOB_ID = j.JOB_ID
 JOIN departments AS d
 ON jh.DEPARTMENT_ID = d.DEPARTMENT_ID
-ORDER BY `Nome Completo` DESC, `Cargo`;
+ORDER BY `Nome completo` DESC, `Cargo`;
