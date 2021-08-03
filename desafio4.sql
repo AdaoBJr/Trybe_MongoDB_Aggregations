@@ -8,5 +8,6 @@ ELSE 'CEO'
 END AS 'Senioridade'
 FROM hr.jobs AS jobs
 INNER JOIN hr.employees AS employees
-ON jobs.JOB_ID = employees.JOB_ID;
+ON jobs.JOB_ID = employees.JOB_ID
+GROUP BY jobs.JOB_TITLE
 ORDER BY `Média salarial` ASC, jobs.JOB_TITLE ASC;
