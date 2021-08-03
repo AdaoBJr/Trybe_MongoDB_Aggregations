@@ -9,4 +9,4 @@ JOIN jobs as j
 ON e.JOB_ID = j.JOB_ID
 JOIN departments AS d
 ON jh.DEPARTMENT_ID = d.DEPARTMENT_ID
-ORDER BY `Nome Completo` DESC, `Departamento`;
+ORDER BY `Nome Completo` DESC, `Cargo`;
