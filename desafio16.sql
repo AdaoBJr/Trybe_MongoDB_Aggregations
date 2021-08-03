@@ -11,4 +11,4 @@ SELECT COUNT(e.employee_id) FROM job_history as jh INNER JOIN employees as e ON 
 RETURN total_empregos;
 END $$
 
-SELECT buscar_quantidade_de_empregos_por_funcionario('NKOCHHAR') as 'total_empregos'
+SELECT BUSCAR_QUANTIDADE_DE_EMPREGOS_POR_FUNCIONARIO('NKOCHHAR') AS 'total_empregos';
