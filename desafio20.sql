@@ -11,6 +11,7 @@ INNER JOIN hr.job_history JH
 ON E.EMPLOYEE_ID = JH.EMPLOYEE_ID
 INNER JOIN hr.jobs J
 ON JH.JOB_ID = J.JOB_ID
-WHERE E.EMAIL = email_input;
+WHERE E.EMAIL = email_input
+ORDER BY `Departamento`, `Cargo`;
 END $$
 DELIMITER ;
