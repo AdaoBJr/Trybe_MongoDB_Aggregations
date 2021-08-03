@@ -1,4 +1,4 @@
-SELECT CONCAT(employees.FIRST_NAME, ' ', employees.LAST_NAME) AS 'Nome completo',
+SELECT CONCAT(FIRST_NAME, ' ', LAST_NAME) AS 'Nome completo',
 jobs.JOB_TITLE AS 'Cargo',
 jh.START_DATE AS 'Data de início do cargo',
 dpt.DEPARTMENT_NAME AS 'Departamento'
@@ -9,4 +9,4 @@ dpt.DEPARTMENT_NAME AS 'Departamento'
   ON jh.JOB_ID = jobs.JOB_ID
   INNER JOIN hr.departments AS dpt
   ON jh.DEPARTMENT_ID = dpt.DEPARTMENT_ID
-  ORDER BY `Nome completo` DESC, Cargo DESC;
+  ORDER BY `Nome completo` DESC, Cargo;
