@@ -12,7 +12,7 @@ const challengeResult12 = [
     'Salário funcionário 1': '8200.00',
     'Telefone funcionário 1': '650.123.2234',
     'Nome completo funcionário 2': 'Matthew Weiss',
-    'Salário funcionário 2': '8000.00',
+    'SalárioWHERE `Número de compatriotas` > 0 funcionário 2': '8000.00',
     'Telefone funcionário 2': '650.123.1234'
   },
   {
