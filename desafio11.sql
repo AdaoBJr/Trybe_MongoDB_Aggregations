@@ -11,4 +11,4 @@ GROUP BY
   Nome,
   `País`
 ORDER BY
-  `País`;
+  Nome;
