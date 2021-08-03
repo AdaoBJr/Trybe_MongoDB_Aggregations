@@ -33,4 +33,3 @@ FROM
     employees ON jobs.job_id = employees.job_id
 GROUP BY jobs.job_id
 ORDER BY AVG(employees.salary) ASC , job_title ASC;
-
