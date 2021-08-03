@@ -1,4 +1,4 @@
-SELECT 
+SELECT
     CONCAT(LastName, ' ', FirstName) AS 'Nome completo',
     COUNT(*) 'Total de pedidos'
 FROM
