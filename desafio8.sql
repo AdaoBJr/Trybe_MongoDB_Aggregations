@@ -7,6 +7,8 @@ FROM
   INNER JOIN w3schools.orders AS o ON c.CustomerID = o.CustomerID
   INNER JOIN w3schools.shippers AS s ON o.ShipperID = s.ShipperID
 WHERE
-  s.ShipperId <> 3
+  s.ShipperId IN (1, 2)
 ORDER BY
-  c.ContactName
+  c.ContactName,
+  s.ShipperName,
+  o.OrderDate;
