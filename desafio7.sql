@@ -1,0 +1,1 @@
+SELECT UCASE(CONCAT(e.first_name, ' ', e.last_name)) AS 'Nome completo', h.start_date AS 'Data de início', salary AS 'Salário' FROM employees AS e INNER JOIN job_history AS h ON e.employee_id = h.employee_id WHERE (MONTH(h.start_date) <= 03) ORDER BY UCASE(CONCAT(e.first_name, ' ', e.last_name)), h.start_date;
