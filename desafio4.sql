@@ -1,7 +1,3 @@
-SELECT * FROM hr.employees;
-
-SELECT * FROM hr.jobs;
-
 SELECT j.JOB_TITLE as 'Cargo', ROUND(AVG(e.SALARY), 2) as 'Média salarial',
 CASE
 WHEN  ROUND(AVG(e.SALARY), 2) >=2000 AND ROUND(AVG(e.SALARY), 2) <= 5800 THEN 'Júnior'
