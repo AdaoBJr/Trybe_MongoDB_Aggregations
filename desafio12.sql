@@ -10,6 +10,5 @@ FROM
     hr.employees AS em2
 WHERE
     em1.JOB_ID = em2.JOB_ID
---         AND em1.`Nome completo funcionário 1` <> em2.`Nome completo funcionário 2`
+        AND CONCAT(em1.FIRST_NAME, ' ', em1.LAST_NAME) <> CONCAT(em2.FIRST_NAME, ' ', em2.LAST_NAME)
 ORDER BY `Nome completo funcionário 1` , `Nome completo funcionário 2`;
--- Error Code: 1054. Unknown column 'em1.Nome completo funcionário 1' in 'where clause'
