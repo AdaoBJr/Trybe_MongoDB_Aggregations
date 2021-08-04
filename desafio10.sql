@@ -8,5 +8,5 @@ FROM
         INNER JOIN
     w3schools.products AS p ON d.ProductID = p.ProductID
 GROUP BY Produto
-HAVING Média > 20.00
+HAVING 'Média' > 20.00
 ORDER BY Média ASC , Produto ASC;
