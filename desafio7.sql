@@ -17,4 +17,3 @@ WHERE
         OR START_DATE LIKE '%-02-%'
         OR START_DATE LIKE '%-03-%'
 ORDER BY `Nome completo` , `Data de início`;
-
