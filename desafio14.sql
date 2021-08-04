@@ -1,13 +1,9 @@
 SELECT
-  country
+  DISTINCT(s.country) AS 'País'
 FROM
-  w3schools.customers
-UNION
-SELECT
-  country
-FROM
-  w3schools.suppliers
+  w3schools.customers as c
+  INNER JOIN w3schools.suppliers as s
 ORDER BY
-  country
+  s.country
 LIMIT
   5;
