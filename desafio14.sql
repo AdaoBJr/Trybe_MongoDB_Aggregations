@@ -1,11 +1,17 @@
-SELECT
-  c.country AS 'País'
-FROM
-  w3schools.suppliers as s
-  INNER JOIN w3schools.customers as c
-GROUP BY
-  c.country
+(
+  SELECT
+    Country AS 'País'
+  FROM
+    w3schools.customers
+)
+UNION
+  (
+    SELECT
+      Country
+    FROM
+      w3schools.suppliers
+  )
 ORDER BY
-  c.country
+  País
 LIMIT
   5;
