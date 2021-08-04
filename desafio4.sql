@@ -13,4 +13,3 @@ FROM
     hr.jobs AS j ON e.JOB_ID = j.JOB_ID
 GROUP BY e.JOB_ID
 ORDER BY AVG(e.salary) , j.JOB_TITLE;
-    
