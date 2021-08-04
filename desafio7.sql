@@ -12,4 +12,4 @@ WHERE
     MONTH(h.START_DATE) = 1
         OR MONTH(h.START_DATE) = 2
         OR MONTH(h.START_DATE) = 3
-ORDER BY Nome completo , Data de inicio ASC
+ORDER BY `Nome completo` , `Data de inicio` ASC;
