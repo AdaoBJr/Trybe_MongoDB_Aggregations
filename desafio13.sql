@@ -1,0 +1,1 @@
+select p.ProductName 'Produto', p.Price 'Preço' from w3schools.products p inner join w3schools.order_details o on p.ProductID = o.ProductID where o.Quantity > 80 order by p.ProductName;
