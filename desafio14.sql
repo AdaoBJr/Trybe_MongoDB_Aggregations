@@ -1,9 +1,11 @@
 SELECT
-  DISTINCT(s.country) AS 'País'
+  c.country AS 'País'
 FROM
-  w3schools.customers as c
-  INNER JOIN w3schools.suppliers as s
+  w3schools.suppliers as s
+  INNER JOIN w3schools.customers as c
+GROUP BY
+  c.country
 ORDER BY
-  s.country
+  c.country
 LIMIT
   5;
