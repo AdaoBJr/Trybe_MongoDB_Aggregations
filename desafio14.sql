@@ -1,0 +1,1 @@
+select c.Country as 'País' from customers as c union select s.Country as 'País' from suppliers as s order by `País` limit 5;
