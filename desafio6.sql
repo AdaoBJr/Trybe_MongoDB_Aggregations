@@ -15,4 +15,4 @@ FROM
     hr.job_history AS jh ON e.EMPLOYEE_ID = jh.EMPLOYEE_ID
         INNER JOIN
     hr.departments AS d ON jh.DEPARTMENT_ID = d.DEPARTMENT_ID
-ORDER BY CONCAT(e.first_name, ' ', e.last_name) DESC , JOB_TITLE;
+ORDER BY CONCAT(e.first_name, ' ', e.last_name) DESC , j.JOB_TITLE;
