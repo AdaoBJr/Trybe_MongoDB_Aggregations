@@ -1,6 +1,6 @@
 SELECT
   t1.ContactName AS Nome,
-  t1.Country AS País,
+  t1.Country AS 'País',
   COUNT(t2.ContactName) AS 'Número de compatriotas'
 FROM
   w3schools.customers AS t1,
@@ -10,6 +10,6 @@ WHERE
   AND t1.ContactName <> t2.ContactName
 GROUP BY
   Nome,
-  País
+  t1.Country
 ORDER BY
   Nome;
