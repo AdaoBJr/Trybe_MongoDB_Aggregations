@@ -11,7 +11,7 @@ SELECT
     COUNT(Country) - 1
   FROM w3schools.customers
   GROUP BY Country
-  HAVING Country = País)
+  HAVING Country = `País`)
   AS 'Número de compatriotas'
 FROM w3schools.customers
 HAVING Compatriotas <> 0
