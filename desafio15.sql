@@ -1,0 +1,1 @@
+DELIMITER // CREATE PROCEDURE buscar_media_por_cargo (in cargo varchar(45)) BEGIN select round(avg(e.salary), 2) as 'Média salarial' from hr.employees as e inner join hr.jobs as j on e.JOB_ID = j.job_id where j.job_title = cargo; END // DELIMITER ;
