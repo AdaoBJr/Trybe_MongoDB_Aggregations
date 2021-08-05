@@ -1,0 +1,1 @@
+DELIMITER ** CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionario(email varchar(45)) returns int reads sql data BEGIN declare retorno int; select count(*) from hr.employees as e inner join hr.job_history as jh on jh.EMPLOYEE_ID = e.EMPLOYEE_ID where e.EMAIL = email into retorno;return retorno; END ** DELIMITER ;
