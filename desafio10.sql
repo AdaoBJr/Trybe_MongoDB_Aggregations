@@ -1,16 +1,19 @@
 -- select * from w3schools.products;
 -- show tables from w3schools;
 -- select * from w3schools.order_details;
-SELECT ProductName AS 'Produto', (
-	SELECT min(quantity)
+SELECT ProductName AS 'Produto',
+(SELECT
+	  MIN(quantity)
     FROM w3schools.order_details
     WHERE productID = w3schools.products.productID
-) AS 'Mínima', (
-	SELECT max(quantity)
+) AS 'Mínima',
+	(SELECT
+	  MAX(quantity)
     FROM w3schools.order_details
     WHERE productID = w3schools.products.productID 
-) AS 'Máxima', (
-	SELECT round(AVG(quantity), 2)
+) AS 'Máxima',
+	(SELECT
+	  ROUND(AVG(quantity), 2)
     FROM w3schools.order_details
     WHERE productID = w3schools.products.productID
 ) AS 'Média'
