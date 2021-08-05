@@ -14,5 +14,5 @@ SELECT
   HAVING Country = `País`)
   AS 'Número de compatriotas'
 FROM w3schools.customers
-HAVING Compatriotas <> 0
+HAVING `Número de compatriotas`<> 0
 ORDER BY ContactName;
