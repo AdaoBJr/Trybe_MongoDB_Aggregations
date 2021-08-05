@@ -1,1 +1,8 @@
-select concat(e.first_name, ' ', e.last_name) as 'Nome Completo', concat(day(jh.start_date), '/', month(jh.start_date), '/', year(jh.start_date)) as 'Data de início', concat(day(jh.end_date), '/', month(jh.end_date), '/', year(jh.end_date)) as 'Data de rescisão', round(datediff(jh.start_date, jh.end_date) / 365, 2) as 'Anos trabalhados' from hr.employees as e inner join hr.job_history as jh on jh.EMPLOYEE_ID = e.EMPLOYEE_ID order by `Nome completo`, `Anos trabalhados` ; 
+SELECT
+CONCAT(e.FIRST_NAME, ' ',e.LAST_NAME ) 'Nome completo',
+DATE_FORMAT(jh.START_DATE, '%d/%m/%Y') 'Data de início',
+DATE_FORMAT(jh.END_DATE, '%d/%m/%Y') 'Data de rescisão',
+ROUND(DATEDIFF(jh.END_DATE, jh.START_DATE) / 365, 2) 'Anos trabalhados'
+FROM hr.employees AS e
+JOIN hr.job_history AS jh ON e.EMPLOYEE_ID = jh.EMPLOYEE_ID
+ORDER BY `Nome completo`, `Anos trabalhados`;
