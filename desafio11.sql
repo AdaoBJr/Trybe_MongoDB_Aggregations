@@ -12,7 +12,7 @@ SELECT
         FROM
             w3schools.customers
         GROUP BY Country
-        HAVING Country = País) AS 'Compatriotas'
+        HAVING Country = País) AS 'Número de compatriotas'
 FROM
     w3schools.customers
 HAVING Compatriotas <> 0
