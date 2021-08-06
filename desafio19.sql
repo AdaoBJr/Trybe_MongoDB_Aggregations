@@ -12,7 +12,7 @@ BEGIN
     hr.employees
   WHERE
     MONTH(HIRE_DATE) = mes
-    AND YEAR(HIRE_DATE) = ano;
+    AND YEAR(HIRE_DATE) = ano
   INTO 
     total;
   RETURN
