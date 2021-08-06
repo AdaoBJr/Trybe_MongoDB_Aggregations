@@ -6,18 +6,18 @@ CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionario(emailBuscado VARCH
 RETURNS INT READS SQL DATA
 BEGIN
   DECLARE total_empregos INT;
-	SELECT 
+  SELECT 
     COUNT(*)
-	FROM
+  FROM
     hr.employees AS e
   INNER JOIN
     hr.job_history AS jh ON e.EMPLOYEE_ID = jh.EMPLOYEE_ID
-	WHERE
+  WHERE
     e.EMAIL = emailBuscado 
-	INTO 
+  INTO 
     total_empregos;
-	RETURN
-		total_empregos;
+  RETURN
+    total_empregos;
 END $$
 
 DELIMITER ;
