@@ -1,6 +1,6 @@
 select
   jobs.job_title as 'Cargo',
-  ROUND(AVG(employees.salary), 2) as 'Média Salarial',
+  ROUND(AVG(employees.salary), 2) as 'Média salarial',
   CASE
     WHEN AVG(employees.salary) BETWEEN 2000
     AND 5800 THEN 'Júnior'
@@ -9,7 +9,7 @@ select
     WHEN AVG(employees.salary) between 7501
     AND 10500 then 'Sênior'
     WHEN AVG(employees.salary) > 10500 THEN 'CEO'
-  END AS 'SENIORIDADE'
+  END AS 'Senioridade'
 FROM
   hr.jobs as jobs
   inner join hr.employees as employees on jobs.job_id = employees.job_id
