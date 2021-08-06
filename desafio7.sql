@@ -8,5 +8,4 @@ ON a.EMPLOYEE_ID=b.EMPLOYEE_ID
 WHERE MONTH(b.START_DATE) = 01
 OR MONTH(b.START_DATE) = 02
 OR MONTH(b.START_DATE) = 03
-ORDER BY `Nome completo`, `Data de início`
-;
+ORDER BY `Nome completo`, `Data de início`;
