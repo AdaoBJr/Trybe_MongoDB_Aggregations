@@ -11,7 +11,7 @@ FROM hr.job_history
 AS job_history
 INNER JOIN hr.employees
 AS employees
-ON employees.EMAIL = input_email
+ON employees.EMAIL = femail
 WHERE employees.EMPLOYEE_ID = job_history.EMPLOYEE_ID
 INTO response;
 RETURN response;
