@@ -11,5 +11,5 @@ FROM
   hr.employees AS e2
 WHERE
   e1.job_id = e2.job_id
-  AND e1.first_name <> e2.first_name
+  AND CONCAT(e1.first_name, ' ', e1.last_name) <> CONCAT(e2.first_name, ' ', e2.last_name)
 ORDER BY `Nome completo funcionário 1`, `Nome completo funcionário 2`;
