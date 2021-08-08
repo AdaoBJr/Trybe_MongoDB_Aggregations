@@ -1,4 +1,3 @@
--- https://pt.stackoverflow.com/questions/247070/como-formatar-data-e-hora-do-mysql-para-o-formato-brasileiro-em-php
 SELECT
   CONCAT(E.FIRST_NAME, ' ', E.LAST_NAME) 'Nome completo',
   DATE_FORMAT(J.START_DATE, '%d/%m/%Y') 'Data de início',
