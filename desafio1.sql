@@ -8,3 +8,4 @@ FROM
   hr.countries
 ORDER BY
   COUNTRY_NAME ASC;
+  
