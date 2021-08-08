@@ -1,1 +1,2 @@
+/*FEITO COM A AJUDA DO ALUNO JOÃO OLIVEIRA*/
 select concat(firstName, ' ', lastName) as 'Nome completo', count(*) as 'Total de pedidos' from w3schools.employees as clientes inner join w3schools.orders as pedidos on clientes.EmployeeID = pedidos.EmployeeID group by pedidos.EmployeeID order by `Total de pedidos`;
