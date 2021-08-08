@@ -1,5 +1,5 @@
 SELECT cust.ContactName AS 'Nome de contato',
-	  ship.ShipperName AS 'Empresa que fez o envio',
+    ship.ShipperName AS 'Empresa que fez o envio',
     orders.OrderDate AS 'Data do pedido'
 FROM orders
 INNER JOIN customers AS cust ON cust.CustomerID = orders.CustomerID
