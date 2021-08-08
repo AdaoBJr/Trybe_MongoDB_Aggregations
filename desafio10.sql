@@ -1,0 +1,1 @@
+select produtos.productName as 'Produto', min(pedidos.quantity) as 'Mínima', max(pedidos.quantity) as 'Máxima', round( avg(pedidos.quantity), 2) as 'Média' from w3schools.products as produtos inner join w3schools.order_details as pedidos on pedidos.ProductID = produtos.ProductID group by `Produto` having `Média` > 20.00 order by `Média`, `Produto`;
