@@ -1,5 +1,5 @@
 SELECT 
-    customers.CustomerName AS `Nome de contato`,
+    customers.ContactName AS `Nome de contato`,
     shippers.ShipperName AS `Empresa que fez o envio`,
     orders.OrderDate AS `Data do pedido`
 FROM w3schools.customers AS customers
