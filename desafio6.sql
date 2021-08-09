@@ -5,9 +5,9 @@ SELECT
     departments.department_name AS `Departamento`
 FROM hr.employees AS employees
 INNER JOIN hr.jobs AS jobs
-    ON employees.job_id = jobs.job_id
+    ON ON jobs.job_id = employees.job_id
 INNER JOIN hr.job_history AS job_history
-    ON employees.job_id = job_history.job_id
+    ON job_history.employee_id = employees.employee_id
 INNER JOIN hr.departments AS departments
-    ON employees.department_id = departments.department_id
+    ON departments.department_id = job_history.department_id
 ORDER BY  `Nome completo` DESC, `Cargo` ASC;
