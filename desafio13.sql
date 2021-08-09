@@ -1,5 +1,5 @@
 SELECT
-	prod.ProductName AS "Produto",
+    prod.ProductName AS "Produto",
     prod.Price AS "Preço"
 FROM order_details AS order_d
 INNER JOIN products AS prod
