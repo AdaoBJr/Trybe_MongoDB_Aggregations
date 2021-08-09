@@ -5,7 +5,7 @@ SELECT
     departments.department_name AS `Departamento`
 FROM hr.employees AS employees
 INNER JOIN hr.jobs AS jobs
-    ON ON jobs.job_id = employees.job_id
+    ON jobs.job_id = employees.job_id
 INNER JOIN hr.job_history AS job_history
     ON job_history.employee_id = employees.employee_id
 INNER JOIN hr.departments AS departments
