@@ -9,7 +9,7 @@ FROM
 GROUP BY
   1
 HAVING
-  M é dia > 20
+  Média > 20
 ORDER BY
   4,
   1;
