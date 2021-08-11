@@ -11,5 +11,5 @@ INNER JOIN hr.employees AS employees
 WHERE employess.email = email INTO quant_empregos;
 RETURN quant_empregos;
 END $$
-DELIMITER;
 SELECT buscar_quantidade_de_empregos_por_funcionario('NKOCHHAR');
+DELIMITER;
