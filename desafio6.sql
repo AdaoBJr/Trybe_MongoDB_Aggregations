@@ -1,4 +1,3 @@
-USE hr;
 SELECT
 CONCAT(EMP.FIRST_NAME, ' ', EMP.LAST_NAME) AS "Nome completo", 
 JOB.JOB_TITLE AS "Cargo",
