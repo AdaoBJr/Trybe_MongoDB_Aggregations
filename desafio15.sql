@@ -1,11 +1,11 @@
--- USE hr;
--- DELIMITER $$
--- CREATE PROCEDURE buscar_media_por_cargo(IN NOME_CARGO VARCHAR(50), OUT MEDIA_SALARY DOUBLE)
--- BEGIN
--- SELECT AVG(EMP.SALARY) AS "Média salarial"
--- FROM employees AS EMP
--- INNER JOIN jobs AS JOB
--- ON NOME_CARGO = JOB.JOB_TITLE;
--- END $$
--- DELIMITER ;
+USE hr;
+DELIMITER $$
+CREATE PROCEDURE buscar_media_por_cargo(IN NOME_CARGO VARCHAR(50), OUT MEDIA_SALARY DOUBLE)
+BEGIN
+SELECT AVG(EMP.SALARY) AS "Média salarial"
+FROM employees AS EMP
+INNER JOIN jobs AS JOB
+ON NOME_CARGO = JOB.JOB_TITLE;
+END $$
+DELIMITER ;
 CALL buscar_media_por_cargo('Programmer');
