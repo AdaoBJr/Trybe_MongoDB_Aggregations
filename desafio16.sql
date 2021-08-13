@@ -1,0 +1,14 @@
+USE hr;
+DELIMITER $$
+CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionario(PARAMETRO VARCHAR(50))
+RETURNS INT READS SQL DATA
+BEGIN
+DECLARE QTD INT;
+SELECT COUNT(EMP.EMAIL) FROM employees AS EMP
+WHERE EMAIL = PARAMETRO
+INTO QTD;
+RETURN QTD;
+END $$
+DELIMITER ;
+
+SELECT buscar_quantidade_de_empregos_por_funcionario("NKOCHHAR");
