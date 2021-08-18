@@ -9,7 +9,7 @@ DECLARE data_contratacao INT;
 SELECT
 COUNT(*)
 FROM employees
-	WHERE mes = MONTH(HIRE_DATE) AND ano = YEAR(HIRE_DATE)
+WHERE mes = MONTH(HIRE_DATE) AND ano = YEAR(HIRE_DATE)
     INTO data_contratacao;
     RETURN data_contratacao;
 END $$
