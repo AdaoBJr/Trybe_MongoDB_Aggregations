@@ -7,4 +7,4 @@ ON customers.CustomerID = orders.CustomerID
 INNER JOIN w3schools.shippers AS shippers
 ON orders.ShipperID = shippers.ShipperID
 WHERE shippers.ShipperID IN (1, 2)
-ORDER BY `Nome de contato`, `Empresa que faz o envio`, `Data do pedido`; 
+ORDER BY `Nome de contato`, `Empresa que fez o envio`, `Data do pedido`; 
