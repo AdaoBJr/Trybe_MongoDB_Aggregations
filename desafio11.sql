@@ -1,8 +1,8 @@
 SELECT 
-b.ContactName AS "Nome",
-b.Country AS "País",
-COUNT(a.CustomerID) - 1 AS "Número de compatriotas"
+b.ContactName "Nome",
+b.Country "País",
+COUNT(a.CustomerID) "Número de compatriotas"
 FROM customers a, customers b
-WHERE a.Country = b.Country
+WHERE a.Country = b.Country AND a.CustomerID <> b.CustomerID
 GROUP BY b.CustomerID
 ORDER BY `Nome`;
