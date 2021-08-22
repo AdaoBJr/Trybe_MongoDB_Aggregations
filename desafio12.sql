@@ -6,5 +6,5 @@ SELECT
     emploB.SALARY AS "Salário funcionário 2",
     emploB.PHONE_NUMBER AS "Telefone funcionário 2"
 FROM employees AS emploA, employees AS emploB
-WHERE emploA.EMPLOYEE_ID != emploB.EMPLOYEE_ID AND emploA.JOB_ID = emploB.JOB_ID
+WHERE emploA.JOB_ID = emploB.JOB_ID AND emploA.EMPLOYEE_ID != emploB.EMPLOYEE_ID
 ORDER BY emploA.FIRST_NAME, emploB.FIRST_NAME;

@@ -1,6 +1,6 @@
 USE hr;
 DELIMITER $$
-CREATE FUNCTION buscar_media_por_cargo(email varchar(50))
+CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionario(email varchar(50))
 RETURNS INT READS SQL DATA
 BEGIN
   DECLARE qty_jobs INT;
