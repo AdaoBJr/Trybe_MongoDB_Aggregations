@@ -9,4 +9,3 @@ SET NEW.OrderDate = CURRENT_DATE(),
 NEW.OrderDate = CURRENT_DATE();
 END $$
 DELIMITER ;
-
