@@ -5,4 +5,4 @@ CONCAT(DAY(END_DATE), "/", MONTH(END_DATE), "/", YEAR(END_DATE)) "Data de rescis
 ROUND(DATEDIFF(END_DATE, START_DATE) / 365, 2) "Anos trabalhados"
 FROM hr.job_history h
 INNER JOIN employees e ON h.EMPLOYEE_ID = e.EMPLOYEE_ID
-ORDER BY `Nome Completo`;
+ORDER BY `Nome Completo`, `Anos trabalhados`;
