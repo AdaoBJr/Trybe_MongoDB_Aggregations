@@ -7,4 +7,4 @@ SELECT
     emploB.PHONE_NUMBER AS "Telefone funcionário 2"
 FROM employees AS emploA, employees AS emploB
 WHERE emploA.JOB_ID = emploB.JOB_ID AND emploA.EMPLOYEE_ID != emploB.EMPLOYEE_ID
-ORDER BY emploA.FIRST_NAME, emploB.FIRST_NAME;
+ORDER BY CONCAT(emploA.FIRST_NAME, ' ', emploA.LAST_NAME), CONCAT(emploB.FIRST_NAME, ' ', emploB.LAST_NAME);
