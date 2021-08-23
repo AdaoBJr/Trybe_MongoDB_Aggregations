@@ -1,10 +1,10 @@
-DELIMITER $$
-CRIAR  FUNÇÃO  buscar_quantidade_de_empregos_por_funcionario (param varchar ( 100 ))
-RETORNA INT LÊ DADOS SQL
-COMEÇAR
-DECLARAR quantidade INT ;
-SELECT  COUNT ( jh . EMPLOYEE_ID ) FROM job_history jh INNER JOIN funcionários e ON  jh . EMPLOYEE_ID  =  e . EMPLOYEE_ID  WHERE EMAIL = param
-INTO quantidade;
-RETORNAR quantidade;
-END $$
-DELIMITER;
+SELECT 
+CONCAT(E.FIRST_NAME, ' ', E.LAST_NAME) 
+CONCAT(SUBSTRING(JH.START_DATE, 9,2),'/',SUBSTRING(JH.START_DATE, 6,2),'/',YEAR(JH.START_DATE)) 
+CONCAT(SUBSTRING(JH.END_DATE, 9,2),'/',SUBSTRING(JH.END_DATE, 6,2),'/',YEAR(JH.END_DATE)) 'Data de rescisão',
+ROUND(DATEDIFF(JH.END_DATE,JH.START_DATE) / 365, 2) 'Anos trabalhados'
+FROM
+employees E
+INNER JOIN
+job_history JH ON E.EMPLOYEE_ID = JH.EMPLOYEE_ID
+ORDER BY `Nome completo`, `Anos trabalhados`;
