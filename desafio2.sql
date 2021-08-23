@@ -7,6 +7,4 @@ SELECT
         WHEN MAX_SALARY > 30000 THEN 'Altíssimo'
         ELSE 'Não categorizado'
     END AS 'Nível'
-FROM
-    hr.jobs
-ORDER BY JOB_TITLE ASC;
+FROM hr.jobs ORDER BY JOB_TITLE ASC;
