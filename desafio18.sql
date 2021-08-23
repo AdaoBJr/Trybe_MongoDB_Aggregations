@@ -1,4 +1,3 @@
-USE hr;
 DELIMITER $$
 CRIAR  FUNÇÃO  buscar_quantidade_de_empregos_por_funcionario (param varchar ( 100 ))
 RETORNA INT LÊ DADOS SQL

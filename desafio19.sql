@@ -1,4 +1,3 @@
-USE hr;
 DELIMITER $$
 CRIAR  FUNÇÃO  exibir_quantidade_pessoas_contratadas_por_mes_e_ano (MES INT , ANO INT )
 RETORNA INT LÊ DADOS SQL

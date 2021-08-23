@@ -1,11 +1,11 @@
 USE hr;
 DELIMITER $$
-CRIAR  FUNÇÃO  buscar_quantidade_de_empregos_por_funcionario (param varchar ( 100 ))
-RETORNA INT LÊ DADOS SQL
-COMEÇAR
-DECLARAR quantidade INT ;
-SELECT  COUNT ( jh . EMPLOYEE_ID ) FROM job_history jh INNER JOIN funcionários e ON  jh . EMPLOYEE_ID  =  e . EMPLOYEE_ID  WHERE EMAIL = param
+CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionario(param varchar(100))
+RETURNS INT READS SQL DATA
+BEGIN
+DECLARE quantidade INT;
+SELECT COUNT(jh.EMPLOYEE_ID) FROM job_history jh INNER JOIN employees e ON jh.EMPLOYEE_ID = e.EMPLOYEE_ID WHERE EMAIL = param
 INTO quantidade;
-RETORNAR quantidade;
+RETURN quantidade;
 END $$
-DELIMITER;
+DELIMITER ;
