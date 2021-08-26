@@ -1,9 +1,8 @@
 DELIMITER $$
 CREATE TRIGGER trigger_data_insert
-BEFORE INSERT ON PERFIL
+BEFORE INSERT ON w3schools.orders
 FOR EACH ROW
 BEGIN
-SET NEW.OrderDate = NOW(),
-NEW.orders = 'INSERT';
+SET NEW.OrderDate = NOW();
 END $$
 DELIMITER ;
